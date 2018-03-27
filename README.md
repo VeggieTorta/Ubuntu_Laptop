@@ -7,6 +7,7 @@ Ubuntu_Laptop
 
 # Software
 * Ubuntu 16.04 LTS / 64 bit
+
 * Remap 'Caps lock' to 'esc'
    * sudo apt-get install gnome-tweak-tool -y && gnome-tweak-tool
    * Typing -> Caps lock behavior -> Select
@@ -18,3 +19,7 @@ Ubuntu_Laptop
     * sudo apt install vim
   * Uninstall:
     * sudo apt install ppa-purge && sudo ppa-purge ppa:jonathonf/vim
+
+* Remove batery icon
+  * sudo apt-get remove indicator-power
+  
