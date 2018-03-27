@@ -20,5 +20,11 @@ Ubuntu_Laptop
   * Uninstall:
     * sudo apt install ppa-purge && sudo ppa-purge ppa:jonathonf/vim
 
-* Install Synapse
+* Ranger:
+  * Install:
+    * sudo apt-get update
+    * sudo apt-get install ranger caca-utils highlight atool w3m poppler-utils mediainfo
+
+* Other:
+  * Install Synapse
   
