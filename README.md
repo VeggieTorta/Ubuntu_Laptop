@@ -20,6 +20,5 @@ Ubuntu_Laptop
   * Uninstall:
     * sudo apt install ppa-purge && sudo ppa-purge ppa:jonathonf/vim
 
-* Remove batery icon
-  * sudo apt-get remove indicator-power
+* Install Synapse
   
