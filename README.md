@@ -7,6 +7,10 @@ Ubuntu_Laptop
 
 # Software
 * Ubuntu 16.04 LTS / 64 bit
+* Remap 'Caps lock' to 'esc'
+   * sudo apt-get install gnome-tweak-tool -y && gnome-tweak-tool
+   * Typing -> Caps lock behavior -> Select
+
 * Vim 8.0:
   * Install:
     * sudo add-apt-repository ppa:jonathonf/vim
