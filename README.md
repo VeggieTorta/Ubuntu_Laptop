@@ -25,6 +25,17 @@ Ubuntu_Laptop
     * sudo apt-get update
     * sudo apt-get install ranger caca-utils highlight atool w3m poppler-utils mediainfo
 
+* Terminator:
+  * Install:
+    * sudo add-apt-repository ppa:gnome-terminator
+    * sudo apt-get update
+    * sudo apt-get install terminator
+  * Uninstall:
+    * sudo apt-get remove terminator
+    * sudo apt-get remove --auto-remove terminator
+  
+
 * Other:
   * Install Synapse
+  
   
