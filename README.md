@@ -11,6 +11,9 @@ Ubuntu_Laptop
 * Remap 'Caps lock' to 'esc'
    * sudo apt-get install gnome-tweak-tool -y && gnome-tweak-tool
    * Typing -> Caps lock behavior -> Select
+* Remap "Super" (command) to "Control"
+  * xmodmap -e "remove mod4 = Super_L"
+  * xmodmap -e "add control = Super_L"
 
 * Vim 8.0:
   * Install:
