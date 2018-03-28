@@ -20,6 +20,11 @@ Ubuntu_Laptop
   * Uninstall:
     * sudo apt install ppa-purge && sudo ppa-purge ppa:jonathonf/vim
 
+* Git:
+  * Install:
+    * sudo apt-get update
+    * Sudo apt-get install git
+
 * Ranger:
   * Install:
     * sudo apt-get update
@@ -34,6 +39,15 @@ Ubuntu_Laptop
     * sudo apt-get remove terminator
     * sudo apt-get remove --auto-remove terminator
   
+* Vim Plug-ins:
+  * Pathogen:
+    * mkdir -p ~/.vim/autoload ~/.vim/bundle && \ curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+  * Nerdtree:
+    * git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
+  * Startify:
+    * git clone https://github.com/mhinz/vim-startify.git ~/.vim/bundle/Startify
+  * Vimwiki:
+    * git clone https://github.com/vimwiki/vimwiki.git ~/.vim/bundle/vimwiki
 
 * Other:
   * Install Synapse
