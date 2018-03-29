@@ -7,10 +7,12 @@ Ubuntu_Laptop
 
 # Software
 * Ubuntu 16.04 LTS / 64 bit
+  * sudo apt-get purge unity*
 
 * Remap 'Caps lock' to 'esc'
    * sudo apt-get install gnome-tweak-tool -y && gnome-tweak-tool
    * Typing -> Caps lock behavior -> Select
+
 * Remap "Super" (command) to "Control"
   * xmodmap -e "remove mod4 = Super_L"
   * xmodmap -e "add control = Super_L"
@@ -33,7 +35,7 @@ Ubuntu_Laptop
     * sudo apt-get update
     * sudo apt-get install ranger caca-utils highlight atool w3m poppler-utils mediainfo
 
-* Terminator:
+* Terminator:kkkkk
   * Install:
     * sudo add-apt-repository ppa:gnome-terminator
     * sudo apt-get update
