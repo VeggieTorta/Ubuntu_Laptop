@@ -14,8 +14,11 @@ Ubuntu_Laptop
    * Typing -> Caps lock behavior -> Select
 
 * Remap "Super" (command) to "Control"
-  * xmodmap -e "remove mod4 = Super_L"
-  * xmodmap -e "add control = Super_L"
+    * xmodmap -e "remove mod4 = Super_L"
+    * xmodmap -e "add control = Super_L"
+
+* Remap "Cap Lock" to a second "esc", placed in ~/.profile
+    * xsetkbmap -option caps:escape
 
 * Vim 8.0:
   * Install:
@@ -30,12 +33,21 @@ Ubuntu_Laptop
     * sudo apt-get update
     * Sudo apt-get install git
 
+* GitKraken
+    * Install:
+        * wget https://release.gitkraken.com/linux/gitkraken-amd64.deb
+        * sudo dpkg -i --force-depends gitkraken-amd64.deb
+        * sudo apt-get install -f
+        * rm -f gitkraken-amd64.deb
+
+
+
 * Ranger:
   * Install:
     * sudo apt-get update
     * sudo apt-get install ranger caca-utils highlight atool w3m poppler-utils mediainfo
 
-* Terminator:kkkkk
+* Terminator:
   * Install:
     * sudo add-apt-repository ppa:gnome-terminator
     * sudo apt-get update
@@ -53,6 +65,9 @@ Ubuntu_Laptop
     * git clone https://github.com/mhinz/vim-startify.git ~/.vim/bundle/Startify
   * Vimwiki:
     * git clone https://github.com/vimwiki/vimwiki.git ~/.vim/bundle/vimwiki
+
+
+
 
 * Other:
   * Install Synapse
