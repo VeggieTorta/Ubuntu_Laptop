@@ -6,6 +6,7 @@ Ubuntu_Laptop
 * 4 GB RAM
 
 # Software
+
 * Ubuntu 16.04 LTS / 64 bit
   * sudo apt-get purge unity*
 
@@ -25,8 +26,14 @@ Ubuntu_Laptop
     * sudo add-apt-repository ppa:jonathonf/vim
     * sudo apt update
     * sudo apt install vim
-  * Uninstall:
+  * Uninstall vim:
     * sudo apt install ppa-purge && sudo ppa-purge ppa:jonathonf/vim
+  * Unintstall nano:
+    * sudo apt-get remove --auto-remove nano
+    * sudo apt-get purge nano
+    * sudo apt-get --audo-remove nano
+  * Select Default Editor:
+    * sudo update-alternative --config editor
 
 * Git:
   * Install:
