@@ -1,14 +1,12 @@
-Ubuntu_Laptop
 
-# Hardware:
+
+# System:
 * Macbook Air mid 2011
  * i5
  * 4 GB RAM
+ * OS: Ubuntu 16.04 LTS / 64 bit
 
-# Software
-* Ubuntu 16.04 LTS / 64 bit
-
-* Terminator:
+# Terminator:
   * Install:
     * sudo add-apt-repository ppa:gnome-terminator
     * sudo apt-get update
@@ -17,7 +15,7 @@ Ubuntu_Laptop
     * sudo apt-get remove terminator
     * sudo apt-get remove --auto-remove terminator
 
-* Vim 8.0:
+# Vim 8.0:
   * Install:
     * sudo add-apt-repository ppa:jonathonf/vim
     * sudo apt update
@@ -32,24 +30,25 @@ Ubuntu_Laptop
     * sudo update-alternative --config editor
 
 
-* Remap 'Caps lock' to 'esc'
+# Remap 'Caps lock' to 'esc'
    * sudo apt-get install gnome-tweak-tool -y && gnome-tweak-tool
    * Typing -> Caps lock behavior -> Select
 
-* Remap "Super" (command) to "Control"
+# Remap "Super" (command) to "Control"
     * xmodmap -e "remove mod4 = Super_L"
     * xmodmap -e "add control = Super_L"
 
-* Remap "Cap Lock" to a second "esc", placed in ~/.profile
+# Remap "Cap Lock" to a second "esc", placed in ~/.profile
     * xsetkbmap -option caps:escape
 
-
-* Git:
-  * Install:
+##########
+## Git: ##
+##########
+ * Install:
     * sudo apt-get update
     * Sudo apt-get install git
 
-* GitKraken
+# GitKraken
     * Install:
         * wget https://release.gitkraken.com/linux/gitkraken-amd64.deb
         * sudo dpkg -i --force-depends gitkraken-amd64.deb
@@ -58,14 +57,14 @@ Ubuntu_Laptop
 
 
 
-* Ranger:
+# Ranger:
   * Install:
     * sudo apt-get update
     * sudo apt-get install ranger caca-utils highlight atool w3m poppler-utils mediainfo
 
 
   
-* Vim Plug-ins:
+# Vim Plug-ins:
   * Curl:
     * sudo apt-get update && sudo apt-get install curl
   * Pathogen:
@@ -79,8 +78,9 @@ Ubuntu_Laptop
 
 
 
-
-* Other:
+# Other:
   * Install Synapse
+  * Private Internete Access:
+   * https://www.privateinternetaccess.com/installer/download_installer_linux
   
   
