@@ -2,24 +2,20 @@ Ubuntu_Laptop
 
 # Hardware:
 * Macbook Air mid 2011
-* i5
-* 4 GB RAM
+ * i5
+ * 4 GB RAM
 
 # Software
-
 * Ubuntu 16.04 LTS / 64 bit
-  * sudo apt-get purge unity*
 
-* Remap 'Caps lock' to 'esc'
-   * sudo apt-get install gnome-tweak-tool -y && gnome-tweak-tool
-   * Typing -> Caps lock behavior -> Select
-
-* Remap "Super" (command) to "Control"
-    * xmodmap -e "remove mod4 = Super_L"
-    * xmodmap -e "add control = Super_L"
-
-* Remap "Cap Lock" to a second "esc", placed in ~/.profile
-    * xsetkbmap -option caps:escape
+* Terminator:
+  * Install:
+    * sudo add-apt-repository ppa:gnome-terminator
+    * sudo apt-get update
+    * sudo apt-get install terminator
+  * Uninstall:
+    * sudo apt-get remove terminator
+    * sudo apt-get remove --auto-remove terminator
 
 * Vim 8.0:
   * Install:
@@ -34,6 +30,19 @@ Ubuntu_Laptop
     * sudo apt-get --audo-remove nano
   * Select Default Editor:
     * sudo update-alternative --config editor
+
+
+* Remap 'Caps lock' to 'esc'
+   * sudo apt-get install gnome-tweak-tool -y && gnome-tweak-tool
+   * Typing -> Caps lock behavior -> Select
+
+* Remap "Super" (command) to "Control"
+    * xmodmap -e "remove mod4 = Super_L"
+    * xmodmap -e "add control = Super_L"
+
+* Remap "Cap Lock" to a second "esc", placed in ~/.profile
+    * xsetkbmap -option caps:escape
+
 
 * Git:
   * Install:
@@ -54,16 +63,11 @@ Ubuntu_Laptop
     * sudo apt-get update
     * sudo apt-get install ranger caca-utils highlight atool w3m poppler-utils mediainfo
 
-* Terminator:
-  * Install:
-    * sudo add-apt-repository ppa:gnome-terminator
-    * sudo apt-get update
-    * sudo apt-get install terminator
-  * Uninstall:
-    * sudo apt-get remove terminator
-    * sudo apt-get remove --auto-remove terminator
+
   
 * Vim Plug-ins:
+  * Curl:
+    * sudo apt-get update && sudo apt-get install curl
   * Pathogen:
     * mkdir -p ~/.vim/autoload ~/.vim/bundle && \ curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
   * Nerdtree:
