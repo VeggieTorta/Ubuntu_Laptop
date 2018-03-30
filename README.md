@@ -80,5 +80,8 @@
   * Install Synapse
   * Private Internete Access:
    * https://www.privateinternetaccess.com/installer/download_installer_linux
+  * KeepPass:
+   * sudo add-apt-repository ppa:jtaylor/keepass
+   * sudo apt-get update && sudo apt-get install keepass2
   
   
