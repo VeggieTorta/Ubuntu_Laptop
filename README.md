@@ -41,9 +41,7 @@
 # Remap "Cap Lock" to a second "esc", placed in ~/.profile
     * xsetkbmap -option caps:escape
 
-##########
-## Git: ##
-##########
+### Git:
  * Install:
     * sudo apt-get update
     * Sudo apt-get install git
@@ -64,7 +62,7 @@
 
 
   
-# Vim Plug-ins:
+### Vim Plug-ins:
   * Curl:
     * sudo apt-get update && sudo apt-get install curl
   * Pathogen:
