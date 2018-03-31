@@ -31,15 +31,20 @@ Install:
 * sudo apt update
 * sudo apt install vim
 ```
-    * Uninstall vim:
-      * sudo apt install ppa-purge && sudo ppa-purge ppa:jonathonf/vim
-    * Unintstall nano:
-      * sudo apt-get remove --auto-remove nano
-      * sudo apt-get purge nano
-      * sudo apt-get --audo-remove nano
-    * Select Default Editor:
-      * sudo update-alternative --config editor
-
+Uninstall vim:
+```
+sudo apt install ppa-purge && sudo ppa-purge ppa:jonathonf/vim
+```
+Unintstall nano:
+```
+sudo apt-get remove --auto-remove nano
+sudo apt-get purge nano
+sudo apt-get --audo-remove nano
+```    
+Select Default Editor:
+```
+sudo update-alternative --config editor
+```
 ### Remap 'Caps lock' to 'esc':
     * sudo apt-get install gnome-tweak-tool -y && gnome-tweak-tool
     * Typing -> Caps lock behavior -> Select
