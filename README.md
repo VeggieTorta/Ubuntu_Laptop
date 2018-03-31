@@ -72,7 +72,9 @@
   * Vimwiki:
     * git clone https://github.com/vimwiki/vimwiki.git ~/.vim/bundle/vimwiki
 
-
+# Mosh:
+ * Sudo apt install mosh
+ 
 
 # Other:
   * Install Synapse
