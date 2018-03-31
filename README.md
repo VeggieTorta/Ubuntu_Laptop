@@ -76,6 +76,7 @@
 
 # Other:
   * Install Synapse
+  * Dropbox
   * Private Internete Access:
    * https://www.privateinternetaccess.com/installer/download_installer_linux
   * KeepPass:
