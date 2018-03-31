@@ -27,10 +27,11 @@ source /home/veggietorta/.startup_remapkey.sh
 
 ### Tilix:
 * Install:
-   ``` * download tilix.zip https://github.com/gnunn1/tilix/releases
-       * sudo unzip tilix.zip -d /
-       * sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
-      ```
+   ``` 
+   * download tilix.zip https://github.com/gnunn1/tilix/releases
+   * sudo unzip tilix.zip -d /
+   * sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
+   ```
 
 
 
