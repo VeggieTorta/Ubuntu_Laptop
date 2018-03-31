@@ -25,10 +25,12 @@
       * sudo apt-get remove --auto-remove terminator
 
 ### Vim 8.0:
-    * Install:
-      * sudo add-apt-repository ppa:jonathonf/vim
-      * sudo apt update
-      * sudo apt install vim
+Install:
+    ''' 
+     sudo add-apt-repository ppa:jonathonf/vim
+     sudo apt update
+     sudo apt install vim
+    '''
     * Uninstall vim:
       * sudo apt install ppa-purge && sudo ppa-purge ppa:jonathonf/vim
     * Unintstall nano:
