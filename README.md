@@ -25,6 +25,15 @@ source /home/veggietorta/.startup_remapkey.sh
       * sudo apt-get remove terminator
       * sudo apt-get remove --auto-remove terminator
 
+### Tilix:
+* Install:
+   ``` * download tilix.zip https://github.com/gnunn1/tilix/releases
+       * sudo unzip tilix.zip -d /
+       * sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
+      ```
+
+
+
 ### Vim 8.0:
 Install:
 ```
