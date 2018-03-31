@@ -5,14 +5,15 @@
     * OS: Ubuntu 16.04 LTS / 64 bit
 
 # System Mod:
-    Added to /home/veggietorta/.bashrc
-    
-    # Scripts:
-        # Launches neofetch everytime terminal is launched
-    source /home/veggietorta/.startup_neofetch.sh
-        # Switches mapping of 'command' and 'control' key
-    source /home/veggietorta/.startup_remapkey.sh
+Added to ```/home/veggietorta/.bashrc```
+```
+#### Scripts: ####
+# Launches neofetch everytime terminal is launched
+source /home/veggietorta/.startup_neofetch.sh
 
+# Switches mapping of 'command' and 'control' key
+source /home/veggietorta/.startup_remapkey.sh
+```
 
 # Programs:
 ### Terminator:
@@ -27,9 +28,9 @@
 ### Vim 8.0:
 Install:
 ```
-* sudo add-apt-repository ppa:jonathonf/vim
-* sudo apt update
-* sudo apt install vim
+sudo add-apt-repository ppa:jonathonf/vim
+sudo apt update
+sudo apt install vim
 ```
 Uninstall vim:
 ```
