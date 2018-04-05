@@ -9,10 +9,10 @@ Added to ```/home/vt/.bashrc```
 ```
 #### Scripts: ####
 # Launches neofetch everytime terminal is launched
-source /home/veggietorta/.startup_neofetch.sh
+source /home/vt/.startup_neofetch.sh
 
 # Switches mapping of 'command' and 'control' key
-source /home/veggietorta/.startup_remapkey.sh
+source /home/vt/.startup_remapkey.sh
 ```
 
 # Move Unity Bar to bottom
@@ -55,8 +55,10 @@ sudo update-alternative --config editor
     * sudo apt-get install gnome-tweak-tool -y && gnome-tweak-tool
     * Typing -> Caps lock behavior -> Select
 
-### Remap "Cap Lock" to a second "esc", placed in ~/.profile:
-    * xsetkbmap -option caps:escape
+### Remap "Cap Lock" to a second "esc":
+    * sudo apt-get install gnome-tweak-tool -y && gnome-tweak-tool
+    * Under 'Typing' select 'Caps Lock Key behavior'
+
 
 ### Git:
     * Install:
