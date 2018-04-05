@@ -5,7 +5,7 @@
     * OS: Ubuntu 16.04 LTS / 64 bit
 
 # System Mod:
-Added to ```/home/veggietorta/.bashrc```
+Added to ```/home/vt/.bashrc```
 ```
 #### Scripts: ####
 # Launches neofetch everytime terminal is launched
@@ -15,15 +15,12 @@ source /home/veggietorta/.startup_neofetch.sh
 source /home/veggietorta/.startup_remapkey.sh
 ```
 
+# Move Unity Bar to bottom
+``` gsettings set com.canonical.Unity.Launcher launcher-position Bottom ```
+
+
+
 # Programs:
-### Terminator:
-    * Install:
-      * sudo add-apt-repository ppa:gnome-terminator
-      * sudo apt-get update
-      * sudo apt-get install terminator
-    * Uninstall:
-      * sudo apt-get remove terminator
-      * sudo apt-get remove --auto-remove terminator
 
 ### Tilix:
 * Install:
@@ -32,8 +29,6 @@ source /home/veggietorta/.startup_remapkey.sh
    * sudo unzip tilix.zip -d /
    * sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
    ```
-
-
 
 ### Vim 8.0:
 Install:
@@ -104,5 +99,7 @@ sudo update-alternative --config editor
     * KeepPass:
         * sudo add-apt-repository ppa:jtaylor/keepass
         * sudo apt-get update && sudo apt-get install keepass2
-  
+    * Firefox Plugins
+        * vim vixen
+        * Ghostery  
   
