@@ -29,6 +29,9 @@ source /home/vt/.startup_remapkey.sh
    * sudo unzip tilix.zip -d /
    * sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
    ```
+### Tmux
+
+### URxvt
 
 ### Vim 8.0:
 Install:
@@ -91,7 +94,6 @@ sudo update-alternative --config editor
 
 # Mosh:
     * Sudo apt install mosh
- 
 
 # Other:
     * Install Synapse
