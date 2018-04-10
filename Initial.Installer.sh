@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
- 
+
 
 sudo apt update
 
@@ -19,7 +19,7 @@ git clone https://github.com/tmux/tmux.git /tmp/tmux
 cd /tmp/tmux
 sh autogen.sh
 ./configure && make
-sudo make install
+sudo make install -y
 cd -
 rm -fr /tmp/tmux
 
@@ -37,8 +37,7 @@ yes sudo '' | add-apt-repository ppa:jonathonf/vim
 sudo apt install -y vim
 
 # vim symbolic link
-ln -s -n /home/vt/Github/dotfiles/.vimrc /home/vt/
-
+# ln -s -n /home/vt/Github/dotfiles/.vimrc /home/vt/
 
 # vim vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
@@ -50,7 +49,14 @@ gsettings set com.canonical.Unity.Launcher launcher-position Bottom
 sudo apt-get install -y gnome-tweak-tool
 
 # urxvt terminal
-sudo apt-get install rxvt-unicode
+# sudo apt-get install rxvt-unicode
+
+# Tilix terminal
+wget https://github.com/gnunn1/tilix/releases/download/1.7.7/tilix.zip /tmp/tilix
+cd /tmp/tilix
+sudo unzip tilix.zip -d /
+sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
+rm -fr /temp/tilix
 
 # cmus
 yes '' | sudo add-apt-repository ppa:jmuc/cmus
@@ -60,7 +66,8 @@ sudo apt-get install -y cmus
 apt-get install -y libfftw3-dev libasound2-dev libncursesw5-dev libpulse-dev libtool
 
 yes sudo '' | add-apt-repository ppa:tehtotalpwnage/ppa
-sudo apt-get install cava
+sudo apt-get update
+sudo apt-get install -y cava
 
 # mutt
 sudo apt-get install -y mutt
@@ -68,17 +75,17 @@ sudo apt-get install -y mutt
 # chrome browser
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 sudo sh -c 'echo "deb https://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
-sudo apt-get install google-chrome-stable
+sudo apt-get install -y google-chrome-stable
 
 # paper theme
 yes '' | sudo add-apt-repository ppa:snwh/pulp
 sudo apt-get update
-sudo apt-get install paper-gtk-theme
-sudo apt-get install paper-icon-theme
-sudo apt-get install paper-cursor-theme
+sudo apt-get install -y paper-gtk-theme
+sudo apt-get install -y paper-icon-theme
+sudo apt-get install -y paper-cursor-theme
 
 # unity-tweak-tool
-sudo apt-get install unity-tweak-tool
+sudo apt-get install -y unity-tweak-tool
 
 # remove bloatwear
 
