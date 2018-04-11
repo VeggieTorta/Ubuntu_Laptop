@@ -69,22 +69,25 @@ sudo apt install -y vim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 ##########################
-## unity bar to bottom  ##
+##     gsettings        ##
 ##########################
 
+# Unit bar move to bottom of screen
 gsettings set com.canonical.Unity.Launcher launcher-position Bottom
+
+# Change wallpaper (NEEDS WORK)
+  # unzip and move wallpaper to picture folder
+sudo unzip /home/vt/Downloads/Ubuntu_laptop/wallpaper_geometry.zip -d /home/vt/Pictures/  
+  # move wallpaper to picture folder
+gsettings set org.gnome.desktop.background picture-uri 'file:///home/vt/Pictures/wallpaper_geometry.jpg'
+
+
 
 ########################
 ##  gnome-tweak-tool  ##
 ########################
 
 sudo apt-get install -y gnome-tweak-tool
-
-####################
-## urxvt terminal ##
-####################
-
-# sudo apt-get install rxvt-unicode
 
 ####################
 # Tilix terminal  ##
