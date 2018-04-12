@@ -8,8 +8,8 @@ sudo apt-get install -y gdebi
 ##          scripts       ##
 ############################
 
-# NEEDS WORK
-# sudo mv current/file /home/vt/
+
+# TODO sudo mv current/file /home/vt/
 
 
 
@@ -142,6 +142,27 @@ sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
 # Remove tmp/tilix folders & files
 rm -fr /tmp/tilix
 
+    # Tilix Configuration Error Fix
+    # Tilix->Preferences->Default->Command-> select 'Run command as login shell'
+
+    # Quake mod key-binding
+    # TODO
+
+
+###########################
+##   zsh & Oh-My-Zsh     ##
+###########################
+
+    #install zsh
+sudo apt-get install -y zsh
+    # TODO remove current .bashrc 
+    # rm /home/vt/.bashrc
+    # TODO .bashrc edited to make zsh default
+    # mv zip/file/ /home/vt/
+
+    #install oh-my-zsh
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+
 ############################
 ##          cmus          ##
 ############################
@@ -152,12 +173,12 @@ sudo apt-get install -y cmus
 ############################
 ##    cava (NOT WORKING)  ##
 ############################
+# TODO
+#apt-get install -y libfftw3-dev libasound2-dev libncursesw5-dev libpulse-dev libtool
 
-apt-get install -y libfftw3-dev libasound2-dev libncursesw5-dev libpulse-dev libtool
-
-yes sudo '' | add-apt-repository ppa:tehtotalpwnage/ppa
-sudo apt-get update
-sudo apt-get install -y cava
+#yes sudo '' | add-apt-repository ppa:tehtotalpwnage/ppa
+#sudo apt-get update
+#sudo apt-get install -y cava
 
 ############################
 ##          mutt          ##
@@ -197,3 +218,5 @@ sudo apt-get install powertop
 
   #TLP
 sudo apt install tlp tlp-rdw
+
+
