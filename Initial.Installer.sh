@@ -89,7 +89,7 @@ rm -f gitkraken-amd64.deb
 
 sudo apt-get install -y ranger caca-utils highlight atool w3m poppler-utils mediainfo
 
-
+    # TODO Config file
 
 ############################
 ##          vim           ##
@@ -105,6 +105,7 @@ sudo apt install -y vim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 
+
 ###########################
 ##     gsettings         ##
 ###########################
@@ -112,11 +113,11 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 # Unit bar move to bottom of screen
 gsettings set com.canonical.Unity.Launcher launcher-position Bottom
 
-# Change wallpaper (NEEDS WORK)
+# TODO Change wallpaper
   # unzip and move wallpaper to picture folder
-sudo unzip /home/vt/Downloads/Ubuntu_laptop/wallpaper_geometry.zip -d /home/vt/Pictures/  
+#sudo unzip /home/vt/Downloads/Ubuntu_laptop/wallpaper_geometry.zip -d /home/vt/Pictures/  
   # move wallpaper to picture folder
-gsettings set org.gnome.desktop.background picture-uri 'file:///home/vt/Pictures/wallpaper_geometry.jpg'
+#gsettings set org.gnome.desktop.background picture-uri 'file:///home/vt/Pictures/wallpaper_geometry.jpg'
 
 
 
@@ -125,6 +126,7 @@ gsettings set org.gnome.desktop.background picture-uri 'file:///home/vt/Pictures
 ############################
 
 sudo apt-get install -y gnome-tweak-tool
+# Typing -> Caps Lock behavior -> Select
 
 
 ############################
@@ -171,15 +173,15 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
     # TODO symbolic link 
     ln -s /somelocation .zshrc /home/vt/
 
-
-
-
 ############################
 ##          cmus          ##
 ############################
 
 yes '' | sudo add-apt-repository ppa:jmuc/cmus
 sudo apt-get install -y cmus
+
+#TODO config file
+
 
 ############################
 ##    cava (NOT WORKING)  ##
@@ -231,9 +233,14 @@ sudo apt-get install powertop
 sudo apt install tlp tlp-rdw
 
 
+##########################
+##       mosh           ##
+##########################
 
+sudo apt install mosh
 
 
 
 # TODO redshift
 # TODO startup app
+# TODO Purge
