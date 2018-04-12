@@ -22,69 +22,19 @@ source /home/vt/.startup_remapkey.sh
 
 # Programs:
 
-### Tilix:
-* Install:
-   ``` 
-   * download tilix.zip https://github.com/gnunn1/tilix/releases
-   * sudo unzip tilix.zip -d /
-   * sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
-   ```
-### Tmux
-
-### URxvt
-
-### Vim 8.0:
-Install:
-```
-sudo add-apt-repository ppa:jonathonf/vim
-sudo apt update
-sudo apt install vim
-```
-Uninstall vim:
-```
-sudo apt install ppa-purge && sudo ppa-purge ppa:jonathonf/vim
-```
-Unintstall nano:
-```
-sudo apt-get remove --auto-remove nano
-sudo apt-get purge nano
-sudo apt-get --audo-remove nano
-```    
-Select Default Editor:
-```
-sudo update-alternative --config editor
-```
-### Remap 'Caps lock' to 'esc':
-    * sudo apt-get install gnome-tweak-tool -y && gnome-tweak-tool
+* Tilix
+* Tmux
+* Vim
+* gnome-tweak-tool (remap 'cap lock key'
     * Typing -> Caps lock behavior -> Select
+* Git
+* GitKraken
 
-### Remap "Cap Lock" to a second "esc":
-    * sudo apt-get install gnome-tweak-tool -y && gnome-tweak-tool
-    * Under 'Typing' select 'Caps Lock Key behavior'
+* Ranger
 
-
-### Git:
-    * Install:
-      * sudo apt-get update
-      * Sudo apt-get install git
-
-### GitKraken:
-    * Install:
-        * wget https://release.gitkraken.com/linux/gitkraken-amd64.deb
-        * sudo dpkg -i --force-depends gitkraken-amd64.deb
-        * sudo apt-get install -f
-        * rm -f gitkraken-amd64.deb
-
-### Ranger:
-    * Install:
-      * sudo apt-get update
-      * sudo apt-get install ranger caca-utils highlight atool w3m poppler-utils mediainfo
-
-### Vim Plug-ins:
+* Vim Plug-ins:
     * Curl:
       * sudo apt-get update && sudo apt-get install curl
-    * Pathogen:
-      * mkdir -p ~/.vim/autoload ~/.vim/bundle && \ curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
     * Nerdtree:
       * git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
     * Startify:
@@ -92,18 +42,14 @@ sudo update-alternative --config editor
     * Vimwiki:
       * git clone https://github.com/vimwiki/vimwiki.git ~/.vim/bundle/vimwiki
 
-# Mosh:
-    * Sudo apt install mosh
-
-# Other:
-    * Install Synapse
+* Mosh:
+* Other:
     * Dropbox
-    * Private Internete Access:
-        * https://www.privateinternetaccess.com/installer/download_installer_linux
     * KeepPass:
         * sudo add-apt-repository ppa:jtaylor/keepass
         * sudo apt-get update && sudo apt-get install keepass2
-    * Firefox Plugins
-        * vim vixen
-        * Ghostery  
-  
+
+# Uninstall
+* bloatwear
+
+

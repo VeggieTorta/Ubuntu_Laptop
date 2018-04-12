@@ -231,3 +231,9 @@ sudo apt-get install powertop
 sudo apt install tlp tlp-rdw
 
 
+
+
+
+
+# TODO redshift
+# TODO startup app
