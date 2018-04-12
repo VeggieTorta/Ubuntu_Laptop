@@ -145,6 +145,11 @@ rm -fr /tmp/tilix
     # Tilix Configuration Error Fix
     # Tilix->Preferences->Default->Command-> select 'Run command as login shell'
 
+    # Tilix vte.sh fix add to .zshrc file
+
+    # missing symlink fix
+sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
+
     # Quake mod key-binding
     # TODO
 
@@ -162,6 +167,12 @@ sudo apt-get install -y zsh
 
     #install oh-my-zsh
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+
+    # TODO symbolic link 
+    ln -s /somelocation .zshrc /home/vt/
+
+
+
 
 ############################
 ##          cmus          ##
