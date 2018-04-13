@@ -1,13 +1,12 @@
 #!/usr/bin/env bash
 
-sudo apt update
-sudo apt-get install -y gdebi
+	sudo apt update
+	sudo apt-get install -y gdebi
 
 
 ############################
 ##          scripts       ##
 ############################
-
 
 # TODO sudo mv current/file /home/vt/
 
@@ -32,8 +31,7 @@ sudo apt-get install -y gdebi
 ##           git         ##
 ###########################
 
-
-sudo apt install -y git
+	sudo apt install -y git
 
 
 
@@ -205,7 +203,7 @@ sudo apt install -y git
 
 
 # TODO symbolic link 
-	ln -s /somelocation .zshrc /home/vt/
+	#ln -s /somelocation .zshrc /home/vt/
 
 
 
@@ -287,32 +285,26 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
 ##       mosh           ##
 ##########################
 
-
 	sudo apt install mosh
 
 
 #########################
 ##   virtualbox        ##
 #########################
-# TODO
+
+
 # security key
-# add repo
-# intall
+	wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
+
+# add repository
+	sudo apt-add-repository "deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -sc) contrib"
+
+# intall virtualbox
+	sudo apt-get install -y virtualbox
 
 
-#########################
-##      Rofi           ##
-#########################
-
-
-
-
-
-
-
-
-
-
+# TODO Rofi
 # TODO redshift
 # TODO startup app
 # TODO Purge
+
