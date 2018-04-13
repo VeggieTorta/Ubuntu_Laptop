@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-	sudo apt update
+	#sudo apt update
 	sudo apt-get install -y gdebi
-
+	sudo apt-get update && sudo apt-get install curl
 
 ############################
 ##          scripts       ##
@@ -122,10 +122,19 @@
 # vim symbolic link
 	# ln -s -n /home/vt/Github/dotfiles/.vimrc /home/vt/
 
+# Vim Plug-ins
+
 # vim vundle
 	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
+# NERDTree
+	#git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
 
+# Startify
+	#git clone https://github.com/mhinz/vim-startify.git ~/.vim/bundle/Startify
+
+# Vimwiki
+	#git clone https://github.com/vimwiki/vimwiki.git ~/.vim/bundle/vimwiki
 
 ###########################
 ##     gsettings         ##
