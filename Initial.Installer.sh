@@ -166,8 +166,7 @@ sudo apt-get install -y zsh
     # rm /home/vt/.bashrc
     # TODO .bashrc edited to make zsh default
     # mv zip/file/ /home/vt/
-
-    #install oh-my-zsh
+   #install oh-my-zsh
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
     # TODO symbolic link 
@@ -236,6 +235,27 @@ sudo apt install tlp tlp-rdw
 ##########################
 
 sudo apt install mosh
+
+
+#########################
+##   virtualbox        ##
+#########################
+# TODO
+# security key
+# add repo
+# intall
+
+
+#########################
+##      Rofi           ##
+#########################
+
+
+
+
+
+
+
 
 
 
