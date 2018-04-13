@@ -17,7 +17,8 @@
 	* Startify
 	* Vimwiki
 	* Vim-notes
-* gnome-tweak-tool (remap 'cap lock key')
+* Tweak-tool
+* Unity Tweak Tool
 * Git
 * GitKraken
 * Ranger
@@ -28,6 +29,9 @@
 * Virtualbox
 * ZSH
 * Oh-My-Zsh
+* Chrome
+	* Vimc
+	* AdRemover
 
 # Uninstall
 * Most of Ubuntu's stock programs *update to come*
