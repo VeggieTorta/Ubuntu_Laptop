@@ -184,14 +184,12 @@ sudo apt-get install -y cmus
 
 
 ############################
-##    cava (NOT WORKING)  ##
+##         cava           ##
 ############################
-# TODO
-#apt-get install -y libfftw3-dev libasound2-dev libncursesw5-dev libpulse-dev libtool
 
-#yes sudo '' | add-apt-repository ppa:tehtotalpwnage/ppa
-#sudo apt-get update
-#sudo apt-get install -y cava
+sudo add-apt-repository ppa:tehtotalpwnage/ppa
+sudo apt-get update
+sudo apt-get install -y cava
 
 ############################
 ##          mutt          ##
