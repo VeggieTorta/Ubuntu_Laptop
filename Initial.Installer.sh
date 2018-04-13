@@ -316,4 +316,7 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
 # TODO redshift
 # TODO startup app
 # TODO Purge
-
+# TODO KeepPass:
+	# sudo add-apt-repository ppa:jtaylor/keepass
+	# sudo apt-get update && sudo apt-get install keepass2
+# TODO Dropbox

@@ -28,13 +28,6 @@
 * Virtualbox
 * ZSH
 * Oh-My-Zsh
-* Other:
-	* PIA desktop client
-	* Google Chrome
- 	* # Dropbox
-	* # KeepPass:
-		# * sudo add-apt-repository ppa:jtaylor/keepass
-		# * sudo apt-get update && sudo apt-get install keepass2
 
 # Uninstall
 * Most of Ubuntu's stock programs *update to come*
