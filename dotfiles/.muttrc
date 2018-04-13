@@ -1,0 +1,47 @@
+set ssl_force_tls = yes
+
+####### ME
+
+set from = '*****************@gmail.com'
+set realname='*************************'
+
+####### CREDENTIAL
+
+set smtp_url = 'smtp://**********@smtp.gmail.com'
+set smtp_pass = '******************************'
+
+set imap_user = '****************@gmail.com'
+set imap_pass = '******************************'
+set imap_keepalive = 30
+unset imap_passive
+set imap_keepalive = 900
+set ssl_starttls = yes
+set imap_check_subscribed
+
+
+set use_from = yes
+set envelope_from = yes
+
+set folder = 'imaps://imap.gmail.com:993'
+set spoolfile = '+INBOX'
+set postponed= "+[Gmail]/Drafts"
+
+set header_cache = "~/.mutt/cache/headers"
+set message_cachedir = "~/.mutt/cache/bodie$
+set certificate_file = "~/.mutt/certificate$
+
+
+set move = no
+set editor = 'vim'
+set charset = 'urf-8'
+set record = ''
+set timeout = 60        # idle time before $
+set mail_check = 60     # minium time betwe$
+set delete              # don't ask, just d$
+set quit                # don't ask, jsut d$
+
+
+
+
+
+
