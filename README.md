@@ -30,8 +30,8 @@
 * ZSH
 * Oh-My-Zsh
 * Chrome
-	* Vimc
-	* AdRemover
+	* Vimc (manually installed)
+	* AdRemover (manual installed)
 
 # Uninstall
 * Most of Ubuntu's stock programs *update to come*
