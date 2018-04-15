@@ -119,8 +119,11 @@
 	yes sudo '' | add-apt-repository ppa:jonathonf/vim
 	sudo apt install -y vim
 
+# Remove existing .vimrc file
+    rm /home/vt/.vimrc
+
 # TODO config file, vim symbolic link
-	# ln -s -n /home/vt/Github/dotfiles/.vimrc /home/vt/
+	# ln -s -n /home/vt/Github/Ubuntu_Laptop/dotfiles/.vimrc /home/vt/
 
 # Vim Plug-ins
 
@@ -212,7 +215,7 @@
 
 
 # TODO config file symbolic link 
-	#ln -s /somelocation .zshrc /home/vt/
+	#ln -s -n /home/vt/Github/Ubuntu_Laptop/dotfiles/.zshrc /home/vt/
 
 
 
