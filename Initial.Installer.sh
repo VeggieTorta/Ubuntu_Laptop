@@ -119,7 +119,7 @@
 	yes sudo '' | add-apt-repository ppa:jonathonf/vim
 	sudo apt install -y vim
 
-# vim symbolic link
+# TODO config file, vim symbolic link
 	# ln -s -n /home/vt/Github/dotfiles/.vimrc /home/vt/
 
 # Vim Plug-ins
@@ -211,7 +211,7 @@
 	sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
 
-# TODO symbolic link 
+# TODO config file symbolic link 
 	#ln -s /somelocation .zshrc /home/vt/
 
 
@@ -312,8 +312,31 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
 	sudo apt-get install -y virtualbox
 
 
+##########################
+##      redshift        ##
+##########################
+
+	# Adding repo
+	sudo add-apt-repository ppa:dobey/redshift-daily
+
+	# install
+	sudo apt-get update
+	sudo apt-get install -y redshift redshift-gtk
+
+	# TODO config file 
+
+
+
+##########################
+##        htop          ##
+##########################
+
+	sudo apt-get install htop
+
+
+
+
 # TODO Rofi
-# TODO redshift
 # TODO startup app
 # TODO Purge
 # TODO KeepPass:

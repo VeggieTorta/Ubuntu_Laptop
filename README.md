@@ -24,6 +24,7 @@
 * Ranger
 * Mosh
 * Mutt
+* htop
 * Cava
 * Cmus
 * Virtualbox
