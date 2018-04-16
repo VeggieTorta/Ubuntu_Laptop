@@ -337,6 +337,14 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
 	sudo apt-get install htop
 
 
+#########################
+##   uLauncher         ##
+#########################
+
+# add repo
+    sudo add-apt-repository ppa:agornostal/ulauncher
+    sudo apt-get update
+    sudo apt-get install ulauncher
 
 
 # TODO Rofi
