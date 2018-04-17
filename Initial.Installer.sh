@@ -125,19 +125,21 @@
 # TODO config file, vim symbolic link
 	# ln -s -n /home/vt/Github/Ubuntu_Laptop/dotfiles/.vimrc /home/vt/
 
-# Vim Plug-ins
 
-# vim vundle
-	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+# install plug-ins
+    
+    # vim vundle
+    # NERDTree
+    # Startify
+    # Vimwiki
+    # Rename
+    # Vim-notes
+    # Vim-misc
+    # Vim-multople-cursors
 
-# NERDTree
-	#git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
+    vim +PluginIntall +qall
 
-# Startify
-	#git clone https://github.com/mhinz/vim-startify.git ~/.vim/bundle/Startify
 
-# Vimwiki
-	#git clone https://github.com/vimwiki/vimwiki.git ~/.vim/bundle/vimwiki
 
 ###########################
 ##     gsettings         ##
