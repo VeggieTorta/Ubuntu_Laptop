@@ -1,35 +1,30 @@
 " Author: VeggieTorta
-" Last edited: 04.16.2018
-
-
-
-"#############################
+" Last edited: 04.17.2018
+"###########################
 "Plug-in Manager: Vundle
-"#############################
+"###########################
 "
-"   :PluginInstall
-"   :PluginUpdate
-"   :source ~/.vimrc
+    ":PluginInstall
+    ":PluginUpdate
+    ":source ~/.vimrc
 "
     set nocompatible                        " required
     filetype off                            " required
     set rtp+=~/.vim/bundle/Vundle.vim       " required
     call vundle#begin()                     " required
-
+"
     Plugin 'VundleVim/Vundle.vim'           " Vundle manages itself
     Plugin 'scrooloose/nerdtree'            " Nerdtree
     Plugin 'danro/rename.vim'               " Rename
     Plugin 'vimwiki/vimwiki'                " Vimwiki
     Plugin 'mhinz/vim-startify'             " Vim-Startify
-
     Plugin 'terryma/vim-multiple-cursors'   " Multiple cursors
     Plugin 'pseewald/vim-anyfold'           " Vim-anyfold
-
+"
     call vundle#end()                       " required
     filetype plugin indent on               " required
-
-
-
+"
+"
 "##############################
 "Plugless Settings:
 "##############################
@@ -46,40 +41,36 @@
     "set nowrap                   " No multiple lines for long lines
     "set term=ansi                " Fix arrow down key inserting 'B'
     set foldlevel=0               " Enable folding
-    
-
-
-
-
+"
+"
     " Always show line numbers, but only in current window.
     set number
     :au WinEnter * :setlocal number
     :au WinLeave * :setlocal nonumber
-
+"
     " Automatically resize vertical splits.
     :au WinEnter * :set winfixheight
     :au WinEnter * :wincmd =
-
-
+"
+"
 "##############################
 "Plug-In Settings:
 "##############################
-
-set nocompatible
-filetype plugin on
-syntax on
-
-
-
-
+"
+    set nocompatible
+    filetype plugin on
+    syntax on
+"
+"
 "Startify:
-
+"
     let g:startify_bookmarks = [
     \ '/home/vt/.vimrc',
     \ '/home/vt/Github/vimwiki/dev/index.md',
     \ '/home/vt/Github/vimwiki/school/index.md',
     \ ]
-
+"
+    let g:startify_custom_header = ['       F-O-C-U-S       ']
     "let g:startify_custom_header = [
     \' ',
     \'       .                                                      .                              ',
@@ -104,22 +95,17 @@ syntax on
     \'                                   `b  `       `  d`                                         ',
     \'                                   `             `                                           ',
     \' ', ]
-
-
-
-"Vimwiki: 
+"
+"
+"Vimwiki:
     "<:h vimwiki>
     "Path and file format
     let g:vimwiki_list = [{'path': '~/Github/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
-
-"Vim-Anyfold:
-    "let anyfold_activate =1
-
-
-"Vim-multicursor:
 "
+"
+"Vim-multicursor:
     let g:multi_cursor_use_default_mapping=0
-
+"
     "Default mapping
     let g:multi_cursor_start_word_key      = '<C-n>'
     let g:multi_cursor_select_all_word_key = '<A-n>'
@@ -129,28 +115,26 @@ syntax on
     let g:multi_cursor_prev_key            = '<C-p>'
     let g:multi_cursor_skip_key            = '<C-x>'
     let g:multi_cursor_quit_key            = '<Esc>'
-
-
-
+"
+"
 "NerdTree:
     "closes NERDTree when a file is selected
     let NERDTreeQuitOnOpen=1
-
+"
     "show hidden files (start with '.')
     let NERDTreeShowHidden=1
-
+"
     "filter files out from being shown
     let NERDTreeIgnore = ['\.pyc$','\.DS_Store','\.localized','\.git']
-
+"
     "Keyboard shortcut'
     map <C-t> :NERDTreeToggle<CR>
-
-
+"
+"
 "#############################
 "Python Settings:
 "#############################
-
-
+"
     set tabstop=4
     set shiftwidth=4
     set expandtab
