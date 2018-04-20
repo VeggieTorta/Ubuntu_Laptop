@@ -1,3 +1,14 @@
+# Instructions:
+    * Download to home folder
+    * Open Terminal, type:
+
+```
+    $ cd ~/Ubunut_Macbook_Air
+    $ sh .Initial_Installer.sh
+
+```
+    * Done.
+
 # Hardware:
 * Macbook Air (13-inch, Mid 2011)
 * Intel Core i5
@@ -7,6 +18,9 @@
 
 # Software:
 * OS: Ubuntu 16.04 LTS / 64 bit
+* Power management:
+    * Powertop
+    * TLP
 * Theme: Paper
 
 # Programs:
@@ -33,7 +47,18 @@
 * Chrome
 	* Vimc (manually installed)
 	* AdRemover (manual installed)
+* Redshift
+* Ulauncher
+* ffmpeg
+* Arp-scan
 
 # Uninstall
 * Most of Ubuntu's stock programs *update to come*
+
+# TODO:
+[] Clear out TODOs found in Initial_Installer.sh
+[] List out removed programs
+[] Modify start-up applications
+[] Create script that gives option to modify home folder.
+[] Add github images before and after of this project
 

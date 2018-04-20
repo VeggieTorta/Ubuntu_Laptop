@@ -1,11 +1,45 @@
 #!/usr/bin/env bash
 
-	#sudo apt update
+###########################
+##     Required tools    ##
+###########################
+
 	sudo apt-get install -y gdebi
-	sudo apt-get update && sudo apt-get install curl
+	sudo apt-get update && sudo apt-get install -y curl
+
+# TODO  purge  
 
 ############################
-##          scripts       ##
+##       Repos            ##
+############################
+
+
+# vim:
+    yes sudo '' | add-apt-repository ppa:jonathonf/vim
+# cmus:
+	yes '' | sudo add-apt-repository ppa:jmuc/cmus
+# cava:
+    sudo add-apt-repository ppa:tehtotalpwnage/ppa
+# paper theme:
+	yes '' | sudo add-apt-repository ppa:snwh/pulp
+# ffmeg:
+    sudo add-apt-repository ppa:jonathonf/ffmpeg-3
+# virtualbox:
+	sudo apt-add-repository "deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -sc) contrib"
+# ulauncher:
+    sudo add-apt-repository ppa:agornostal/ulauncher
+# redshift:
+	sudo add-apt-repository ppa:dobey/redshift-daily
+
+
+
+	sudo apt-get update
+
+
+
+
+############################
+##        scripts         ##
 ############################
 
 # TODO sudo mv current/file /home/vt/
@@ -34,7 +68,6 @@
 	sudo apt install -y git
 
 
-
 ###########################
 ##         PIA           ##
 ###########################
@@ -44,7 +77,7 @@
 	#wget https://www.privateinternetaccess.com/installer/pia-nm.sh
 	#sudo bash pia-nm.sh
 
-# desktop app (NEEDS WORK)
+# desktop app (TODO NEEDS WORK)
 	# cd Downloads
 	# wget https://www.privateinternetaccess.com/installer/download_installer_linux
 	# tar -xzf pia-v78-installer-linux.tar.gz
@@ -85,16 +118,16 @@
 ############################
 
 
-# download gitkraken file
+# download gitkraken file:
 	wget https://release.gitkraken.com/linux/gitkraken-amd64.deb
 
-# unpack file
+# unpack file:
 	sudo dpkg -i --force-depends gitkraken-amd64.deb
 
-# install gitkraken
+# install gitkraken:
 	sudo apt-get install -f
 
-# remove downloaded gitkraken file
+# remove downloaded gitkraken file:
 	rm -f gitkraken-amd64.deb
 
 
@@ -104,7 +137,7 @@
 ############################
 
 
-# Install ranger and dependencies	
+# Install ranger and dependencies:
 	sudo apt-get install -y ranger caca-utils highlight atool w3m poppler-utils mediainfo
 
 # TODO Config file
@@ -115,18 +148,17 @@
 ##          vim           ##
 ############################
 
-# adding repo
-	yes sudo '' | add-apt-repository ppa:jonathonf/vim
+# install:
 	sudo apt install -y vim
 
-# Remove existing .vimrc file
+# Remove existing .vimrc file:
     rm /home/vt/.vimrc
 
-# TODO config file, vim symbolic link
+# TODO config file, vim symbolic link:
 	# ln -s -n /home/vt/Github/Ubuntu_Laptop/dotfiles/.vimrc /home/vt/
 
 
-# install plug-ins
+# install plug-ins:
     
     # vim vundle
     # NERDTree
@@ -162,7 +194,6 @@
 
 # Typing -> Caps Lock behavior -> Select
 	sudo apt-get install -y gnome-tweak-tool
-
 
 
 ############################
@@ -225,10 +256,6 @@
 ##          cmus          ##
 ############################
 
-# adding repo
-	yes '' | sudo add-apt-repository ppa:jmuc/cmus
-
-# install cmus
 	sudo apt-get install -y cmus
 
 #TODO config file
@@ -238,12 +265,6 @@
 ##         cava           ##
 ############################
 
-
-# adding repo
-	sudo add-apt-repository ppa:tehtotalpwnage/ppa
-	
-# install cava
-	sudo apt-get update
 	sudo apt-get install -y cava
 
 
@@ -253,16 +274,15 @@
 
 	sudo apt-get install -y mutt
 
+    # TODO config file 
+	ln -s -n /home/vt/Github/Ubuntu_Laptop/dotfiles/.muttrc /home/vt/
+
 
 ############################
 ##       paper theme      ##
 ############################
 
-# adding repo
-	yes '' | sudo add-apt-repository ppa:snwh/pulp
-
 # install theme
-	sudo apt-get update
 	sudo apt-get install -y paper-gtk-theme
 	sudo apt-get install -y paper-icon-theme
 	sudo apt-get install -y paper-cursor-theme
@@ -288,18 +308,17 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
 ##########################
   
 #powertop
-	sudo apt-get update
-	sudo apt-get install powertop
+	sudo apt-get install -y powertop
 
  #TLP
-	sudo apt install tlp tlp-rdw
+	sudo apt install -y tlp tlp-rdw
 
 
 ##########################
 ##       mosh           ##
 ##########################
 
-	sudo apt install mosh
+	sudo apt install -y mosh
 
 
 #########################
@@ -310,9 +329,6 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
 # security key
 	wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
 
-# add repository
-	sudo apt-add-repository "deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -sc) contrib"
-
 # intall virtualbox
 	sudo apt-get install -y virtualbox
 
@@ -321,11 +337,6 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
 ##      redshift        ##
 ##########################
 
-	# Adding repo
-	sudo add-apt-repository ppa:dobey/redshift-daily
-
-	# install
-	sudo apt-get update
 	sudo apt-get install -y redshift redshift-gtk
 
 	# TODO config file 
@@ -336,23 +347,46 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
 ##        htop          ##
 ##########################
 
-	sudo apt-get install htop
+	sudo apt-get install -y htop
 
 
 #########################
 ##   uLauncher         ##
 #########################
 
-# add repo
-    sudo add-apt-repository ppa:agornostal/ulauncher
-    sudo apt-get update
-    sudo apt-get install ulauncher
+    sudo apt-get install -y ulauncher
 
 
-# TODO Rofi
-# TODO startup app
-# TODO Purge
-# TODO KeepPass:
+#########################
+##      ffmpeg         ##
+#########################
+
+    sudo apt install -y ffmpeg libav-tools x264 x265
+
+
+#########################
+##      Arp-scan       ##
+#########################
+
+    sudo apt-get install -y arp-scan
+    # sudo arp-scan -l
+    # http://www.nta-monitor.com/wiki/index.php/Arp-scan_User_Guide#Introduction_to_arp-scan
+
+
+#########################
+##       VLC           ##
+#########################
+
+# TODO VLC
+
+
+#########################
+##  TODO KeepPass:     ##
+#########################
+
+# Repo
 	# sudo add-apt-repository ppa:jtaylor/keepass
-	# sudo apt-get update && sudo apt-get install keepass2
-# TODO Dropbox
+
+# Install
+    # sudo apt-get update && sudo apt-get install -y keepass2
+
