@@ -7,7 +7,7 @@
     sudo apt-get install -y gdebi
     sudo apt-get update && sudo apt-get install -y curl # TODO Error: must run as root 
 
-	# TODO  purge  
+# TODO  purge  
 
 ############################
 ##       Repos            ##
@@ -32,7 +32,7 @@
     yes '' | sudo add-apt-repository ppa:dobey/redshift-daily
 
 
-# Update all repositories:
+# update all repos
     sudo apt-get update
 
 
@@ -41,13 +41,13 @@
 ##     google chrome      ##
 ############################
 
-# Dependency pkgs
+# dependency pkgs
     sudo apt-get install -y libxss1 libappindicator1 libindicator7
 
-# Download google-chrome pkg 64 bit
+# dl google-chrome pkg 64 bit
     wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 
-# Install google-chrome pkg
+# install google-chrome pkg
     sudo dpkg -i google-chrome*.deb
 
 
@@ -56,7 +56,6 @@
 ##           git         ##
 ###########################
 
-# Install:
     sudo apt install -y git
 
 
@@ -78,7 +77,7 @@
 
 
 #############################
-##    Tmux & dependencies  ##
+##    tmux & dependencies  ##
 #############################
 
     sudo apt install -y automake
@@ -128,25 +127,26 @@
 ##         ranger         ##
 ############################
 
+
 # Install ranger and dependencies:
     sudo apt-get install -y ranger caca-utils highlight atool w3m poppler-utils mediainfo
 
-# Configuration file and symbolic link:
-    ln -s -n /hoome/vt/Ubuntu_Macbook_Air/dotfiles/ranger/rc.conf /home/vt/.config/ranger/
+# TODO Config file
+
 
 
 ############################
 ##          vim           ##
 ############################
 
-# Install:
+# install:
     sudo apt install -y vim
 
 # Remove existing .vimrc file:
     rm /home/vt/.vimrc
 
-# Configuration file, vim symbolic link:
-    ln -s -n /home/vt/Ubuntu_Macbook_Air/dotfiles/vim/.vimrc /home/vt/
+# TODO config file, vim symbolic link:
+    # ln -s -n /home/vt/Github/Ubuntu_Laptop/dotfiles/.vimrc /home/vt/
 
 
 # Install plug-ins:
@@ -168,28 +168,24 @@
 ##     gsettings         ##
 ###########################
 
-# Unity bar move to bottom of screen:
+# Unity bar move to bottom of screen
     gsettings set com.canonical.Unity.Launcher launcher-position Bottom
 
-# TODO Change wallpaper:
-
-	# Copy wallpapers to Pictures:
-	#sudo cp /home/vt/Ubuntu_Macbook_Air/wallpaper/wallpaper.jpg /home/vt/Pictures/
-	# Apply wallpaper:	
-	#gsettings set org.gnome.desktop.background picture-uri 'file:///home/vt/Pictures/wallpaper_geometry.jpg'
-
-# TODO Change unity bar size: 
+# TODO Change wallpaper
+  # unzip and move wallpaper to picture folder
+#sudo unzip /home/vt/Downloads/Ubuntu_laptop/wallpaper_geometry.zip -d /home/vt/Pictures/  
+  # move wallpaper to picture folder
+#gsettings set org.gnome.desktop.background picture-uri 'file:///home/vt/Pictures/wallpaper_geometry.jpg'
+# TODO Change unity bar size 
 
 
 ############################
 ##    gnome-tweak-tool    ##
 ############################
 
-# Install:
+# Typing -> Caps Lock behavior -> Select
     sudo apt-get install -y gnome-tweak-tool
 
-# Information:
-    # Typing -> Caps Lock behavior -> Select
 
 ############################
 ##     Tilix terminal     ##
@@ -240,11 +236,10 @@
 
 # install oh-my-zsh TODO stops the continuation of all other install, remove or place at the end.
    #sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+# TODO disable the changing of shell
 
-   # TODO disable the changing of shell
-
-# Configuration file and symbolic link:
-    ln -s -n /home/vt/Ubuntu_Macbook_Air/dotfiles/zsh/.zshrc /home/vt/
+# TODO config file symbolic link 
+    #ln -s -n /home/vt/Github/Ubuntu_Laptop/dotfiles/.zshrc /home/vt/
 
 
 
@@ -275,12 +270,8 @@
 
 # TODO Input request, posfix & local folder
 
-# Configuration file & symbolic link:
-
-    rm /home/vt/.muttrc
-    rm /home/vt/.mutt/.muttrc
-
-    ln -s -n /home/vt/Ubuntu_Macbook_Air/dotfiles/mutt/.muttrc /home/vt/
+# TODO config file 
+    ln -s -n /home/vt/Github/Ubuntu_Macbook_Air/dotfiles/.muttrc /home/vt/
 
 
 ############################
@@ -367,11 +358,6 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
     sudo apt-get install -y ulauncher
 
 # Configuration files symbolic link files:
-
-    rm /home/vt/.config/ulauncher/settings.json
-    rm /home/vt/.config/ulauncher/extensions.json
-    rm /home/vt/.config/ulauncher/shortcuts.json
-
     ls -s -n /home/vt/Ubuntu_Macbook_Air/dotfiles/ulauncher/settings.json /home/vt/.config/ulauncher
     ls -s -n /home/vt/Ubuntu_Macbook_Air/dotfiles/ulauncher/extensions.json /home/vt/.config/ulauncher
     ls -s -n /home/vt/Ubuntu_Macbook_Air/dotfiles/ulauncher/shortcuts.json /home/vt/.config/ulauncher

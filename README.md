@@ -1,13 +1,12 @@
 # Instructions:
-    * Download to home folder
-    * Open Terminal, type:
+* Download to home folder
+* Open Terminal, type:
 
 ```
     $ cd ~/Ubunut_Macbook_Air
-    $ sh .Initial_Installer.sh
+    $ sh Initial_Installer.sh
 
 ```
-    * Done.
 
 # Hardware:
 * Macbook Air (13-inch, Mid 2011)
@@ -61,4 +60,4 @@
 [] Modify start-up applications
 [] Create script that gives option to modify home folder.
 [] Add github images before and after of this project
-
+[] Clean-up script (zip
