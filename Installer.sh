@@ -7,7 +7,7 @@
     sudo apt-get install -y gdebi
     sudo apt-get update && sudo apt-get install -y curl # TODO Error: must run as root 
 
-# TODO  purge  
+# TODO  purge
 
 ############################
 ##       Repos            ##
@@ -109,16 +109,16 @@
 ############################
 
 
-# download gitkraken file:
+# Download gitkraken file:
     wget https://release.gitkraken.com/linux/gitkraken-amd64.deb
 
-# unpack file:
+# Unpack file:
     sudo dpkg -i --force-depends gitkraken-amd64.deb
 
-# install gitkraken:
+# Install gitkraken:
     sudo apt-get install -f
 
-# remove downloaded gitkraken file:
+# Remove downloaded gitkraken file:
     rm -f gitkraken-amd64.deb
 
 
@@ -131,8 +131,11 @@
 # Install ranger and dependencies:
     sudo apt-get install -y ranger caca-utils highlight atool w3m poppler-utils mediainfo
 
-# Configuration file
-    ln -s -n /home/vt/Github/Ubuntu_Macbook_Air/dotfiles/rc.conf /home/vt/.config/ranger
+# Remove existing rc.conf file:
+    rm /home/vt/.config/ranger/rc.conf
+
+# Configuration file:
+    ln -s -n /home/vt/Ubuntu_Macbook_Air/dotfiles/ranger/rc.conf /home/vt/.config/ranger/
 
 
 
@@ -140,19 +143,19 @@
 ##          vim           ##
 ############################
 
-# install:
+# Install:
     sudo apt install -y vim
 
 # Remove existing .vimrc file:
     rm /home/vt/.vimrc
 
 # Configuration file, vim symbolic link:
-    ln -s -n /home/vt/Github/Ubuntu_Macbook_Air/dotfiles/.vimrc /home/vt/
+    ln -s -n /home/vt/Ubuntu_Macbook_Air/dotfiles/vim/.vimrc /home/vt/
 
 
 # Install plug-ins:
 
-    # vim vundle
+    # Vim vundle
     # NERDTree
     # Startify
     # Vimwiki
@@ -192,28 +195,28 @@
 ##     Tilix terminal     ##
 ############################
 
-# dl and place in /tmp/tilix
+# Download and place in /tmp/tilix:
     wget https://github.com/gnunn1/tilix/releases/download/1.7.7/tilix.zip /tmp/tilix
 
-# move over to /tmp/tilix
+# Move over to /tmp/tilix:
     cd /tmp/tilix
 
-# unzip tilix file
+# Unzip tilix file:
     sudo unzip tilix.zip -d /
 
-# install tilix
+# Install tilix:
     sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
 
-# remove tmp/tilix folders & files
+# Remove tmp/tilix folders & files:
     rm -fr /tmp/tilix
 
-# fix tilix configuration error
+# Fix tilix configuration error
     # Tilix->Preferences->Default->Command-> select 'Run command as login shell'
 
-# fix Tilix vte.sh add to .zshrc file
+# Fix Tilix vte.sh add to .zshrc file
     # see zshrc file
 
-# fix missing symlink
+# Fix missing symlink:
     sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
 
 # Quake mod key-binding
@@ -239,8 +242,8 @@
    #sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 # TODO disable the changing of shell
 
-# TODO config file symbolic link 
-    #ln -s -n /home/vt/Github/Ubuntu_Laptop/dotfiles/.zshrc /home/vt/
+# Configuration file symbolic link:
+    #ln -s -n /home/vt/Ubuntu_Macbook_Air/dotfiles/.zshrc /home/vt/
 
 
 
@@ -271,8 +274,12 @@
 
 # TODO Input request, posfix & local folder
 
-# TODO config file 
-    ln -s -n /home/vt/Github/Ubuntu_Macbook_Air/dotfiles/.muttrc /home/vt/
+# Remove current .muttrc file:
+    rm /home/vt/.muttrc
+    rm /home/vt/.mutt/.muttrc
+
+# Configuration file:
+    ln -s -n /home/vt/Ubuntu_Macbook_Air/dotfiles/mutt/.muttrc /home/vt/
 
 
 ############################
@@ -340,7 +347,11 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
 # Install:
     sudo apt-get install -y redshift redshift-gtk
 
-# TODO config file:
+# Remove current reshift.conf file:
+    rm /home/vt/.config/redshift.conf
+
+# Configuration file and symbolic link:
+    ln -s -n /home/vt/Ubuntu_Macbook_Air/dotfiles/redshift/redshift.conf /home/vt/.config/
 
 
 
@@ -358,10 +369,15 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
 # Install:
     sudo apt-get install -y ulauncher
 
-# Configuration files symbolic link files:
-    ls -s -n /home/vt/Ubuntu_Macbook_Air/dotfiles/ulauncher/settings.json /home/vt/.config/ulauncher
-    ls -s -n /home/vt/Ubuntu_Macbook_Air/dotfiles/ulauncher/extensions.json /home/vt/.config/ulauncher
-    ls -s -n /home/vt/Ubuntu_Macbook_Air/dotfiles/ulauncher/shortcuts.json /home/vt/.config/ulauncher
+# Remove current configuration files:
+    rm /home/vt/.config/ulauncher/settings.json
+    rm /home/vt/.config/ulauncher/extensions.json
+    rm /home/vt/.config/ulauncher/shortcuts.json
+
+# Configuration files and symbolic link:
+    ls -s -n /home/vt/Ubuntu_Macbook_Air/dotfiles/ulauncher/settings.json /home/vt/.config/ulauncher/
+    ls -s -n /home/vt/Ubuntu_Macbook_Air/dotfiles/ulauncher/extensions.json /home/vt/.config/ulauncher/
+    ls -s -n /home/vt/Ubuntu_Macbook_Air/dotfiles/ulauncher/shortcuts.json /home/vt/.config/ulauncher/
 
 
 
