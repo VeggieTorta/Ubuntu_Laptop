@@ -387,7 +387,9 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
 ##       VLC           ##
 #########################
 
-# TODO VLC
+# Install:
+    sudo apt-get install vlc
+
 
 
 #########################
