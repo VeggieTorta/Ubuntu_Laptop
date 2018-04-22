@@ -131,7 +131,8 @@
 # Install ranger and dependencies:
     sudo apt-get install -y ranger caca-utils highlight atool w3m poppler-utils mediainfo
 
-# TODO Config file
+# Configuration file
+    ln -s -n /home/vt/Github/Ubuntu_Macbook_Air/dotfiles/rc.conf /home/vt/.config/ranger
 
 
 
@@ -145,8 +146,8 @@
 # Remove existing .vimrc file:
     rm /home/vt/.vimrc
 
-# TODO config file, vim symbolic link:
-    # ln -s -n /home/vt/Github/Ubuntu_Laptop/dotfiles/.vimrc /home/vt/
+# Configuration file, vim symbolic link:
+    ln -s -n /home/vt/Github/Ubuntu_Macbook_Air/dotfiles/.vimrc /home/vt/
 
 
 # Install plug-ins:
@@ -388,7 +389,7 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
 #########################
 
 # Install:
-    sudo apt-get install vlc
+    sudo apt-get install -y vlc
 
 
 
