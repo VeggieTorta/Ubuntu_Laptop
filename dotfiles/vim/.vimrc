@@ -1,5 +1,5 @@
 " Author: VeggieTorta
-" Last edited: 04.20.2018
+" Last edited: 04.22.2018
 
 
 "###########################
@@ -31,27 +31,41 @@
 "Plugless Settings:
 "##############################
 
-
+    set shell=zsh                   " Change shell
     set number relativenumber       " Adds numbers to lines & make ralative
     set path+=**                    " Search into subfolders
     set wildmenu                    " Dislay all matching files when tab complete
     set showcmd                     " Display what is typed in right corner
     "set mouse=a                    " Enable to use of mouse
     set ignorecase                  " Ignore case sensitive
+    set smartcase                   " Ignore case if search pattern is all lowercase
+    set incsearch                   " show search matches as you type
     set noswapfile                  " Prevent swap file from being created
-    set encoding=utf8               " utf = 8
+    set encoding=utf8               " Standard encoding and en_US as the standrd language
+    set formatoptions+=1            " When wrapping don't end lines with 1-letter words
     "set nowrap                     " No multiple lines for long lines
     "set term=ansi                  " Fix arrow down key inserting 'B'
     set foldlevel=0                 " Enable folding
     set hlsearch                    " Highlight all matches
     set title                       " Show filename in titlebar of window
     set autowrite                   " Save buffer automatically when changing files
+    set background=dark
+    syntax enable                   " Enable syntax highlighting
+    set nobackup                    " Do not keep back up files
+    set nowb
+    set noswapfile                  " no swap file
+    set laststatus=2                " Always show the status line
+    set showmode                    " Always show what mode we're currently editing in.
+    set clipboard=unnamed           " Normal OS Clipboard interaction
 
 
+    "Swapped ; and : to increase speed, no need to use shift.
     nnoremap ; :
     nnoremap : ;
 
-
+    "Remap j and k to act as expected when used on long wrapped lines.
+    nnoremap j gj
+    nnoremap k gk
 
 
 
@@ -136,8 +150,10 @@ augroup END
 "Python Settings:
 "#############################
 
-    set tabstop=4
-    set shiftwidth=4
+    set tabstop=4           "A tab is four spaces
+    set softtabstop=4       "Tab remove is four spaces
+    set shiftwidth=4        "Autoindenting is four space
+    set copyindent          " copy the previous indentation on autoindentimg
     set expandtab
     set list listchars=tab:▷⋅,trail:⋅,nbsp:⋅
     set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\
