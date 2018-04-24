@@ -253,7 +253,16 @@
 # Install:
     sudo apt-get install -y cmus
 
-#TODO config file:
+# Configuration file:
+    sudo rm /usr/share/cmus/rc
+    sudo ln -s -n /home/vt/Github/Ubuntu_Laptop/dotfiles/cmus/rc /usr/share/cmus/
+
+# Theme Dracula
+    sudo ln -s -n /home/vt/Github/Ubuntu_Laptop/dotfiles/cmus/dracula.theme /usr/share/cmus/
+    # Apply theme, inside of cmus. :colorscheme dracula
+
+
+
 
 # Information:
     # metadata stored /home/vt/.cmus/cache
@@ -265,6 +274,7 @@
 # Install:
     sudo apt-get install -y cava
 
+# TODO Bind to start with cmus
 
 ############################
 ##       paper theme      ##

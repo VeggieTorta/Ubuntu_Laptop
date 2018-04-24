@@ -2,7 +2,7 @@
 ; cap and esc
 ; command and control 
 ; tilix quake mode
-
+; cmus and cava open at the same time
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Start of xbindkeys guile configuration ;;
