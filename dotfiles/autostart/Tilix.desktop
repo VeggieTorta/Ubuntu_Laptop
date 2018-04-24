@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=Tilix
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=Tilix
+Name=Tilix
+Comment[en_US]=
+Comment=

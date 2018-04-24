@@ -172,15 +172,14 @@
 ##     gsettings         ##
 ###########################
 
-# Unity bar move to bottom of screen
+# Unity bar move to bottom of screen:
     gsettings set com.canonical.Unity.Launcher launcher-position Bottom
 
-# TODO Change wallpaper
-  # unzip and move wallpaper to picture folder
-#sudo unzip /home/vt/Downloads/Ubuntu_laptop/wallpaper_geometry.zip -d /home/vt/Pictures/  
+# TODO Change wallpaper:
   # move wallpaper to picture folder
-#gsettings set org.gnome.desktop.background picture-uri 'file:///home/vt/Pictures/wallpaper_geometry.jpg'
-# TODO Change unity bar size 
+    #gsettings set org.gnome.desktop.background picture-uri 'file:///home/vt/Pictures/wallpaper_geometry.jpg'
+
+# TODO Change unity bar size:
 
 
 ############################
@@ -243,8 +242,8 @@
 # TODO disable the changing of shell
 
 # Configuration file symbolic link:
-    #ln -s -n /home/vt/Ubuntu_Macbook_Air/dotfiles/.zshrc /home/vt/
-
+    ln -s -n /home/vt/Ubuntu_Macbook_Air/dotfiles/zsh/.zshrc /home/vt/
+    #TODO correct the right file
 
 
 ############################
@@ -354,6 +353,10 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
 # Install:
     sudo apt-get install -y ulauncher
 
+
+# TODO configuration file
+# TODO add to start-up apps
+
 # Remove current configuration files:
     rm /home/vt/.config/ulauncher/settings.json
     rm /home/vt/.config/ulauncher/extensions.json
@@ -421,4 +424,31 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
 
 # Install
     # sudo apt-get update && sudo apt-get install -y keepass2
+
+
+##########################
+##       xbindkeys      ##
+##########################
+
+# Install:
+    sudo apt-get install -y xbindkeys
+
+# Configuration TODO
+
+
+##########################
+##     Start-up apps    ##
+##########################
+
+# Ulauncher
+    ln -n -s /home/vt/Ubuntu_Macbook_Air/dotfiles/autostart/pia_manager.desktop
+
+# Tilix
+    ln -n -s /home/vt/Ubuntu_Macbook_Air/dotfiles/autostart/pia_manager.desktop
+
+# Redshift
+    ln -n -s /home/vt/Ubuntu_Macbook_Air/dotfiles/autostart/pia_manager.desktop
+
+# PIA
+    ln -n -s /home/vt/Ubuntu_Macbook_Air/dotfiles/autostart/pia_manager.desktop
 
