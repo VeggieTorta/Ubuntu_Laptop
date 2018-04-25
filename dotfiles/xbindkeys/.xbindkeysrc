@@ -1,7 +1,6 @@
 ; ulauncher
 ; cap and esc
 ; command and control 
-; tilix quake mode
 ; cmus and cava open at the same time
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -14,10 +13,6 @@
 ;; see EXTRA FUNCTIONS:
 
 ;; Version: 1.8.2
-
-;; If you edit this file, do not forget to uncomment any lines
-;; that you change.
-;; The semicolon(;) symbol may be used anywhere for comments.
 
 ;; To specify a key, you can use 'xbindkeys --key' or
 ;; 'xbindkeys --multikey' and put one of the two lines in this file.
@@ -69,64 +64,91 @@
 ;; (debug)
 
 
-;; Examples of commands:
 
-(xbindkey '(control shift q) "xbindkeys_show")
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;   VT: Custom keybind    ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;Control + q
+(xbindkey '("m:0x8" "c:24")" "tilix --quake")
+
+;Shift + Slash
+(xbindkey '("m:0x1" "c:61")" "ulauncher")
+
+
+#TODO
+;; ulauncher
+;; cap and esc
+;; command and control
+;; cmus and cava open at the same time
+
+
+
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;    Examples of commands:  ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;;(xbindkey '(control shift q) "xbindkeys_show")
 
 ;; set directly keycode (here control + f with my keyboard)
-(xbindkey '("m:0x4" "c:41") "xterm")
+;;(xbindkey '("m:0x4" "c:41") "xterm")
 
 ;; specify a mouse button
-(xbindkey '(control "b:2") "xterm")
+;;(xbindkey '(control "b:2") "xterm")
 
 ;;(xbindkey '(shift mod2 alt s) "xterm -geom 50x20+20+20")
 
 ;; set directly keycode (control+alt+mod2 + f with my keyboard)
-(xbindkey '(alt "m:4" mod2 "c:0x29") "xterm")
+;; (xbindkey '(alt "m:4" mod2 "c:0x29") "xterm")
 
 ;; Control+Shift+a  release event starts rxvt
-;;(xbindkey '(release control shift a) "rxvt")
+;; (xbindkey '(release control shift a) "rxvt")
 
 ;; Control + mouse button 2 release event starts rxvt
-;;(xbindkey '(releace control "b:2") "rxvt")
+;; (xbindkey '(releace control "b:2") "rxvt")
 
 
 ;; Extra features
-(xbindkey-function '(control a)
-                   (lambda ()
-                     (display "Hello from Scheme!")
-                     (newline)))
-
-(xbindkey-function '(shift p)
-                   (lambda ()
-                     (run-command "xterm")))
-
-
+;;(xbindkey-function '(control a)
+;;                   (lambda ()
+;;                     (display "Hello from Scheme!")
+;;                     (newline)))
+;;
+;;(xbindkey-function '(shift p)
+;;                   (lambda ()
+;;                     (run-command "xterm")))
+;;
+;;
 ;; Double click test
-(xbindkey-function '(control w)
-                   (let ((count 0))
-                     (lambda ()
-                       (set! count (+ count 1))
-                       (if (> count 1)
-                           (begin
-                            (set! count 0)
-                            (run-command "xterm"))))))
+;;(xbindkey-function '(control w)
+;;                   (let ((count 0))
+;;                     (lambda ()
+;;                       (set! count (+ count 1))
+;;                      (if (> count 1)
+;;                           (begin
+;;                            (set! count 0)
+;;                            (run-command "xterm"))))))
 
 ;; Time double click test:
 ;;  - short double click -> run an xterm
 ;;  - long  double click -> run an rxvt
-(xbindkey-function '(shift w)
-                   (let ((time (current-time))
-                         (count 0))
-                     (lambda ()
-                       (set! count (+ count 1))
-                       (if (> count 1)
-                           (begin
-                            (if (< (- (current-time) time) 1)
-                                (run-command "xterm")
-                                (run-command "rxvt"))
-                            (set! count 0)))
-                       (set! time (current-time)))))
+;;(xbindkey-function '(shift w)
+;;                   (let ((time (current-time))
+;;                         (count 0))
+;;                     (lambda ()
+;;                       (set! count (+ count 1))
+;;                       (if (> count 1)
+;;                           (begin
+;;                            (if (< (- (current-time) time) 1)
+;;                                (run-command "xterm")
+;;                                (run-command "rxvt"))
+;;                            (set! count 0)))
+;;                       (set! time (current-time)))))
 
 
 ;; Chording keys test: Start differents program if only one key is
@@ -135,41 +157,48 @@
 ;; If key2 is pressed start cmd-k2
 ;; If both are pressed start cmd-k1-k2 or cmd-k2-k1 following the
 ;;   release order
-(define (define-chord-keys key1 key2 cmd-k1 cmd-k2 cmd-k1-k2 cmd-k2-k1)
-    "Define chording keys"
-  (let ((k1 #f) (k2 #f))
-    (xbindkey-function key1 (lambda () (set! k1 #t)))
-    (xbindkey-function key2 (lambda () (set! k2 #t)))
-    (xbindkey-function (cons 'release key1)
-                       (lambda ()
-                         (if (and k1 k2)
-                             (run-command cmd-k1-k2)
-                             (if k1 (run-command cmd-k1)))
-                         (set! k1 #f) (set! k2 #f)))
-    (xbindkey-function (cons 'release key2)
-                       (lambda ()
-                         (if (and k1 k2)
-                             (run-command cmd-k2-k1)
-                             (if k2 (run-command cmd-k2)))
-                         (set! k1 #f) (set! k2 #f)))))
-
-
+;;(define (define-chord-keys key1 key2 cmd-k1 cmd-k2 cmd-k1-k2 cmd-k2-k1)
+;;    "Define chording keys"
+;;  (let ((k1 #f) (k2 #f))
+;;    (xbindkey-function key1 (lambda () (set! k1 #t)))
+;;    (xbindkey-function key2 (lambda () (set! k2 #t)))
+;;   (xbindkey-function (cons 'release key1)
+;;                      (lambda ()
+;;                        (if (and k1 k2)
+;;                           (run-command cmd-k1-k2)
+;;                            (if k1 (run-command cmd-k1)))
+;;                        (set! k1 #f) (set! k2 #f)))
+;;   (xbindkey-function (cons 'release key2)
+;;                      (lambda ()
+;;                       (if (and k1 k2)
+;;                           (run-command cmd-k2-k1)
+;;                          (if k2 (run-command cmd-k2)))
+;;                     (set! k1 #f) (set! k2 #f)))))
+;;
+;;
 ;; Example:
 ;;   Shift + b:1                   start an xterm
 ;;   Shift + b:3                   start an rxvt
 ;;   Shift + b:1 then Shift + b:3  start gv
 ;;   Shift + b:3 then Shift + b:1  start xpdf
-
-(define-chord-keys '(shift "b:1") '(shift "b:3")
-  "xterm" "rxvt" "gv" "xpdf")
+;;
+;;(define-chord-keys '(shift "b:1") '(shift "b:3")
+;;  "xterm" "rxvt" "gv" "xpdf")
 
 ;; Here the release order have no importance
 ;; (the same program is started in both case)
-(define-chord-keys '(alt "b:1") '(alt "b:3")
-  "gv" "xpdf" "xterm" "xterm")
+;;(define-chord-keys '(alt "b:1") '(alt "b:3")
+;;  "gv" "xpdf" "xterm" "xterm")
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; End of xbindkeys guile configuration ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+
+
+
+
+
 

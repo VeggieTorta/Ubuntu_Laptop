@@ -30,6 +30,10 @@
     yes '' | sudo add-apt-repository ppa:agornostal/ulauncher
 # redshift:
     yes '' | sudo add-apt-repository ppa:dobey/redshift-daily
+# EasyTag
+    yes '' | sudo add-apt-repository ppa:amigadave/ppa
+
+
 
 
 # update all repos
@@ -259,13 +263,13 @@
 
 # Theme Dracula
     sudo ln -s -n /home/vt/Github/Ubuntu_Laptop/dotfiles/cmus/dracula.theme /usr/share/cmus/
+
+# Additional Information:
     # Apply theme, inside of cmus. :colorscheme dracula
 
+    # Clear cache:
+   :update-cache -f
 
-
-
-# Information:
-    # metadata stored /home/vt/.cmus/cache
 
 ############################
 ##         cava           ##
@@ -441,9 +445,23 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
 ##########################
 
 # Install:
-    sudo apt-get install -y xbindkeys
+    sudo apt-get install -y xbindkeys xbindkeys-config
+
+
+# Information:
+    # View Keybindind:$ xbindkeys -k
+
 
 # Configuration TODO
+
+
+#########################
+##      Easytag        ##
+#########################
+
+# Install:
+    sudo apt-get install -y easytag
+
 
 
 ##########################
