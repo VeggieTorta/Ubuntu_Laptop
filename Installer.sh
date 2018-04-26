@@ -463,6 +463,24 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
     sudo apt-get install -y easytag
 
 
+#########################
+##      taskwarrior    ##
+#########################
+
+# Install:
+    sudo apt-get install taskwarrior
+
+# Configuration file
+    #TODO
+
+
+# Information:
+    # Add $ task add buy mikl
+    # Edit $ task 1 modify buy milk
+    # List $ task list
+    # Done $ task 1 done
+    # Calendar $ task calendar
+
 
 ##########################
 ##     Start-up apps    ##
