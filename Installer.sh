@@ -30,7 +30,7 @@
     yes '' | sudo add-apt-repository ppa:agornostal/ulauncher
 # redshift:
     yes '' | sudo add-apt-repository ppa:dobey/redshift-daily
-# EasyTag
+# easytag
     yes '' | sudo add-apt-repository ppa:amigadave/ppa
 
 
@@ -449,10 +449,15 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
 
 
 # Information:
-    # View Keybindind:$ xbindkeys -k
+    # View Keybindind: $ xbindkeys -k
+    # View assigned keybinding: $ xbindkeys_show
+    # UI interface: $ xbindkeys-config
+    # Kebindings:
+        # Control+space = ulauncher
+        # Control+Alt + 1 = tilix quake
 
-
-# Configuration TODO
+# Configuration
+    ln s- -n /home/vt/Ubuntu_Macbook_Air/dotfies/xbindkeys/.xbindkeysrc /home/vt/
 
 
 #########################
@@ -471,8 +476,8 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
     sudo apt-get install taskwarrior
 
 # Configuration file
-    #TODO
-
+    #TODO create 
+    #TODO sync
 
 # Information:
     # Add $ task add buy mikl
@@ -486,13 +491,13 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
 ##     Start-up apps    ##
 ##########################
 
-# Ulauncher
+# ulauncher
     ln -n -s /home/vt/Ubuntu_Macbook_Air/dotfiles/autostart/pia_manager.desktop
 
-# Tilix
+# tilix
     ln -n -s /home/vt/Ubuntu_Macbook_Air/dotfiles/autostart/pia_manager.desktop
 
-# Redshift
+# redshift
     ln -n -s /home/vt/Ubuntu_Macbook_Air/dotfiles/autostart/pia_manager.desktop
 
 # PIA
