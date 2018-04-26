@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
 
 
-#TODO none of the configuration files took because the Ubuntu_Macbook_Air folder was extracted and in the process renamed Ubuntu_Macbook_Air-master
+#############################
+##  Rename Current Folder  ## 
+#############################
 
-
+# Github add ~master to downloaded zip.
+mv /home/vt/Ubuntu_Macbook_Air-master /home/vt/Ubuntu_Macbook_Air
 
 
 
