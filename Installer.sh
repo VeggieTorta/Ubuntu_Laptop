@@ -1,5 +1,13 @@
 #!/usr/bin/env bash
 
+
+#TODO none of the configuration files took because the Ubuntu_Macbook_Air folder was extracted and in the process renamed Ubuntu_Macbook_Air-master
+
+
+
+
+
+
 ###########################
 ##     Required tools    ##
 ###########################
@@ -7,7 +15,13 @@
     sudo apt-get install -y gdebi
     sudo apt-get update && sudo apt-get install -y curl # TODO Error: must run as root 
 
-# TODO  purge
+# TODO purge
+
+# TODO prevent being logged out scripti:
+    # Install Caffeine
+
+
+
 
 ############################
 ##       Repos            ##
@@ -187,7 +201,7 @@
 # move wallpaper to picture folder:
     mv /home/vt/Ubuntu_Macbook_Air/Wallpaper/geo_blud.jpg /home/vt/Pictures/
 
-# Apply wallpaper changer:
+# Apply wallpaper changer: #TODO did not apply
     gsettings set org.gnome.desktop.background picture-uri file:///home/vt/Pictures/geo_red.jpg
 
 
@@ -509,7 +523,7 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
 ##     Start-up apps    ##
 ##########################
 
-# ulauncher:
+# ulauncher: #TODO did not take
     ln -n -s /home/vt/Ubuntu_Macbook_Air/dotfiles/autostart/pia_manager.desktop
 
 # tilix:
