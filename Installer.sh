@@ -448,13 +448,13 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
 #########################
 
 # Install:
-    sudo apt-get install -y mutt
+#    sudo apt-get install -y mutt
 
 # TODO Input request, posfix & local folder
 
 # Remove current .muttrc file:
-    rm /home/vt/.muttrc
-    rm /home/vt/.mutt/.muttrc
+#    rm /home/vt/.muttrc
+#    rm /home/vt/.mutt/.muttrc
 
 # Configuration file:
     ln -s -n /home/vt/Ubuntu_Macbook_Air/dotfiles/mutt/.muttrc /home/vt/
