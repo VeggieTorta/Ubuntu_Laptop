@@ -173,15 +173,26 @@
 
 
 ###########################
-##     gsettings         ##
+##    Unity bar bottom   ##
 ###########################
 
 # Unity bar move to bottom of screen:
     gsettings set com.canonical.Unity.Launcher launcher-position Bottom
 
-# TODO Change wallpaper:
-  # move wallpaper to picture folder
-    #gsettings set org.gnome.desktop.background picture-uri 'file:///home/vt/Pictures/wallpaper_geometry.jpg'
+
+##########################
+#    Change Wallpaper   ##
+##########################
+
+# move wallpaper to picture folder:
+    mv /home/vt/Ubuntu_Macbook_Air/Wallpaper/geo_blud.jpg /home/vt/Pictures/
+
+# Apply wallpaper changer:
+    gsettings set org.gnome.desktop.background picture-uri file:///home/vt/Pictures/geo_red.jpg
+
+
+
+
 
 # TODO Change unity bar size:
 
@@ -223,7 +234,7 @@
     sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
 
 # Quake mod key-binding
-    # TODO
+    # Handled by xKeybinding: Alt+Command + 1
 
 
 ###########################
@@ -264,11 +275,12 @@
 # Theme Dracula
     sudo ln -s -n /home/vt/Github/Ubuntu_Laptop/dotfiles/cmus/dracula.theme /usr/share/cmus/
 
-# Additional Information:
-    # Apply theme, inside of cmus. :colorscheme dracula
+# Information:
+    # Apply theme, inside of cmus.
+        # :colorscheme dracula
 
     # Clear cache:
-   :update-cache -f
+        # :update-cache -f
 
 
 ############################
@@ -351,6 +363,8 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
 # Configuration file and symbolic link:
     ln -s -n /home/vt/Ubuntu_Macbook_Air/dotfiles/redshift/redshift.conf /home/vt/.config/
 
+# Information:
+    # Location set up manually to SF, CA.
 
 
 ##########################
@@ -398,7 +412,8 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
     sudo apt-get install -y arp-scan
 
 # Information:
-    # To scan local network: sudo arp-scan -l
+    # To scan local network:
+        # $ sudo arp-scan -l
     # http://www.nta-monitor.com/wiki/index.php/Arp-scan_User_Guide#Introduction_to_arp-scan
 
 
@@ -456,7 +471,10 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
         # Control+space = ulauncher
         # Control+Alt + 1 = tilix quake
 
-# Configuration
+# Remove current configuration file:
+    rm /home/vt/.xbindkeysrc
+
+# Configuration file:
     ln s- -n /home/vt/Ubuntu_Macbook_Air/dotfies/xbindkeys/.xbindkeysrc /home/vt/
 
 
@@ -475,7 +493,7 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
 # Install:
     sudo apt-get install taskwarrior
 
-# Configuration file
+# Configuration file:
     #TODO create 
     #TODO sync
 
@@ -491,15 +509,15 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
 ##     Start-up apps    ##
 ##########################
 
-# ulauncher
+# ulauncher:
     ln -n -s /home/vt/Ubuntu_Macbook_Air/dotfiles/autostart/pia_manager.desktop
 
-# tilix
+# tilix:
     ln -n -s /home/vt/Ubuntu_Macbook_Air/dotfiles/autostart/pia_manager.desktop
 
-# redshift
+# redshift:
     ln -n -s /home/vt/Ubuntu_Macbook_Air/dotfiles/autostart/pia_manager.desktop
 
-# PIA
+# PIA:
     ln -n -s /home/vt/Ubuntu_Macbook_Air/dotfiles/autostart/pia_manager.desktop
 
