@@ -4,11 +4,11 @@
 
 #Mini.ios
 #TODO unknown function: vundle#end, look in .vimrc file
-#TODO delete downloaded chrome deb file 
-#TODO tilix install
+#TODO tilix failed 
 #TODO amazon bloatwear still installed
-#TODO cmus failed
+#TODO cmus failed /usr/share/cmus/cmus/rc: No such file or directory
 #TODO tmux failed
+#TODO auto start symbolink link failed
 
 
 
@@ -121,19 +121,15 @@ mv /home/vt/Ubuntu_Macbook_Air-master /home/vt/Ubuntu_Macbook_Air
 
     rm -fr /tmp/tmux
 
-    git clone https://github.com/tmux/tmux.git /tmp/tmux
+    git clone https://github.com/tmux/tmux.git /home/vt/Ubuntu_Macbook_Air
 
-    cd /tmp/tmux
+    cd /home/vt/Ubuntu_Macbook_Air/
 
     sh autogen.sh
 
     ./configure && make
 
     sudo make install -y
-
-    cd -
-
-    rm -fr /tmp/tmux
 
 
 
@@ -185,6 +181,8 @@ mv /home/vt/Ubuntu_Macbook_Air-master /home/vt/Ubuntu_Macbook_Air
 # Configuration file, vim symbolic link:
     ln -s -n /home/vt/Ubuntu_Macbook_Air/dotfiles/vim/.vimrc /home/vt/
 
+# Install Vundle:
+    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # Install plug-ins:
 
@@ -209,15 +207,15 @@ mv /home/vt/Ubuntu_Macbook_Air-master /home/vt/Ubuntu_Macbook_Air
     gsettings set com.canonical.Unity.Launcher launcher-position Bottom
 
 
-##########################
-#    Change Wallpaper   ##
-##########################
+###########################
+##    Change Wallpaper   ##
+###########################
 
 # move wallpaper to picture folder:
-    mv /home/vt/Ubuntu_Macbook_Air/Wallpaper/geo_blud.jpg /home/vt/Pictures/
+    mv /home/vt/Ubuntu_Macbook_Air/Wallpaper/geo_blue.jpg /home/vt/Pictures/
 
-# Apply wallpaper changer: #TODO did not apply
-    gsettings set org.gnome.desktop.background picture-uri file:///home/vt/Pictures/geo_red.jpg
+# Apply wallpaper changer:
+    gsettings set org.gnome.desktop.background picture-uri file:///home/vt/Pictures/geo_blue.jpg
 
 
 
@@ -548,4 +546,14 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
 
 # PIA:
     ln -n -s /home/vt/Ubuntu_Macbook_Air/dotfiles/autostart/pia_manager.desktop
+
+
+##########################
+##     Cleanup          ##
+##########################
+
+# Remove Github zip file:
+    rm  -rf /home/vt/Ubunntu_Macbook_Air
+    rm /home/vt/Download/Ubuntu_Macbook_Air-master.zip
+
 
