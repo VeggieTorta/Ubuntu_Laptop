@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 
+#TODO if/then statement to check if program is installed
 
 #Mini.ios
 #TODO unknown function: vundle#end, look in .vimrc file
