@@ -1,6 +1,18 @@
 #!/usr/bin/env bash
 
 
+
+#Mini.ios
+#TODO unknown function: vundle#end, look in .vimrc file
+#TODO delete downloaded chrome deb file 
+#TODO tilix install
+#TODO amazon bloatwear still installed
+#TODO cmus failed
+#TODO tmux failed
+
+
+
+
 #############################
 ##  Rename Current Folder  ## 
 #############################
@@ -345,7 +357,7 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
 
 # Install TLP:
     sudo apt install -y tlp tlp-rdw
-
+    sudo tlp start
 
 ##########################
 ##       mosh           ##
@@ -526,7 +538,7 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
 ##     Start-up apps    ##
 ##########################
 
-# ulauncher: #TODO did not take
+# ulauncher: #TODO did not take, DUH all end in PIA.MANAGer.desktop;;
     ln -n -s /home/vt/Ubuntu_Macbook_Air/dotfiles/autostart/pia_manager.desktop
 
 # tilix:

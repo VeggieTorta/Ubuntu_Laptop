@@ -41,9 +41,9 @@ keystate_capslock = enable
     Control+Alt + 1 
 
 #ulauncher
-"ulauncher"
-    m:0x0 + c:9
-    Escape 
+#"ulauncher"
+#    m:0x0 + c:9
+#    Escape 
 
 #
 # End of xbindkeys configuration
