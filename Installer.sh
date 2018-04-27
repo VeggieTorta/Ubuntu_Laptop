@@ -412,7 +412,6 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
 
 
 # TODO configuration file
-# TODO add to start-up apps
 
 # Remove current configuration files:
     rm /home/vt/.config/ulauncher/settings.json
@@ -538,14 +537,14 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
 ##     Start-up apps    ##
 ##########################
 
-# ulauncher: #TODO did not take, DUH all end in PIA.MANAGer.desktop;;
-    ln -n -s /home/vt/Ubuntu_Macbook_Air/dotfiles/autostart/pia_manager.desktop
+# ulauncher:
+    ln -n -s /home/vt/Ubuntu_Macbook_Air/dotfiles/autostart/ulauncher.desktop
 
 # tilix:
-    ln -n -s /home/vt/Ubuntu_Macbook_Air/dotfiles/autostart/pia_manager.desktop
+    ln -n -s /home/vt/Ubuntu_Macbook_Air/dotfiles/autostart/Tilix.desktop
 
 # redshift:
-    ln -n -s /home/vt/Ubuntu_Macbook_Air/dotfiles/autostart/pia_manager.desktop
+    ln -n -s /home/vt/Ubuntu_Macbook_Air/dotfiles/autostart/reshift-gtk.desktop
 
 # PIA:
     ln -n -s /home/vt/Ubuntu_Macbook_Air/dotfiles/autostart/pia_manager.desktop
