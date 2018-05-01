@@ -532,6 +532,25 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
     # Calendar $ task calendar
 
 
+
+
+
+
+#########################
+##       neo-vim       ##
+#########################
+
+#sudo add-apt-repository ppa:neovim-ppa/unstable
+#sudo apt-get update
+#sudo apt-get install neovim
+
+
+# Link old vim to neovim
+    ln -s ~/.vimrc ~/.config/nvim/init.vim
+
+
+
+
 ##########################
 ##     Start-up apps    ##
 ##########################
