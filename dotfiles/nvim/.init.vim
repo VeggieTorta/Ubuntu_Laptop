@@ -27,10 +27,7 @@
     Plugin 'vim-airline/vim-airline-themes' " Airline Themes
     Plugin 'scrooloose/nerdcommenter'       " Nerdcommenter
     Plugin 'kassio/neoterm'                 " Neoterm
-    Plugin 'mklabs/split-term.vim'          " Split-term
 
-
-    
     call vundle#end()                       " required
     filetype plugin indent on               " required
 
@@ -99,9 +96,6 @@ augroup END
 
 
 
-
-
-
 "##############################
 "Plug-In Settings:
 "##############################
@@ -164,10 +158,7 @@ augroup END
    " Comment current line while in Visual mode.
    " <leader>cc
 
-    
-    
-    
-    
+
 "#############################
 "Python Settings:
 "#############################
@@ -181,4 +172,4 @@ augroup END
     set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\
     \ [%l/%L\ (%p%%)
     filetype plugin indent on
-    au FileType py set textwidth=79 " PEP-8 Friendly
+    au FileType py set textwidth=79 " PEP-8 Friendly  
