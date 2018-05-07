@@ -45,8 +45,6 @@
     set wildmenu                    " Dislay all matching files when tab complete
     set showcmd                     " Display what is typed in right corner
     "set mouse=a                    " Enable to use of mouse
-    set ignorecase                  " Ignore case sensitive
-    set smartcase                   " Ignore case if search pattern is all lowercase
     set incsearch                   " show search matches as you type
     set noswapfile                  " Prevent swap file from being created
     set encoding=utf8               " Standard encoding and en_US as the standrd language
