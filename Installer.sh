@@ -577,3 +577,26 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
     rm /home/vt/Download/Ubuntu_Macbook_Air-master.zip
 
 
+##########################
+##     rxvt-unicode     ##
+##########################
+
+# Install:
+    sudo apt-get install rxvt-unicode
+
+# Configuration:
+
+
+
+
+
+
+
+#TODO default terminal
+#    * sudo update-alternatives --config x-terminal-emulator
+
+
+
+
+
+
