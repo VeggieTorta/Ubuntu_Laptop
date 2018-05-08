@@ -573,7 +573,7 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
 ##########################
 
 # Remove Github zip file:
-    rm  -rf /home/vt/Ubunntu_Macbook_Air
+    rm  -rf /home/vt/Ubuntu_Macbook_Air
     rm /home/vt/Download/Ubuntu_Macbook_Air-master.zip
 
 
@@ -585,7 +585,7 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
     sudo apt-get install rxvt-unicode
 
 # Configuration:
-
+    ln -s -n /home/vt/Ubuntu_Macbook_Air/dotfiles/urxvt/.Xresources /home/vt/
 
 
 

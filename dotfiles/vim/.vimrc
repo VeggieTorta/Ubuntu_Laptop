@@ -96,6 +96,61 @@ augroup TODOHighlight
 augroup END
 
 
+" Hightlight search
+"function! HLNext (blinktime)
+"    let [bufnum, lnum, col, off] = getpos('.')
+"   let matchlen = strlen(matchstr(strpart(getline('.'),col-1,@/))
+"   let target_pat = '\c\%#'.@/
+"    let blinks = 3
+"    for n in range(1,blinks)
+"        let red = matchadd('WhiteOnRed', target_pat, 101)
+"        redraw
+"        exec 'sleep'. float2nr(a:blinktime / (2*blinks) * 1000) . 'm'
+"        call matchdelete(red)
+"        redraw
+"        exec 'sleep' . float2nr(a:blinktime / (2*blinks) * 1000) . 'm'
+"    endfor
+"endfunction
+
+
+
+
+
+
+
+
+
+" Damian Conway's Die Blinkënmatchen: highlight matches
+nnoremap <silent> n n:call HLNext(0.1)<cr>
+nnoremap <silent> N N:call HLNext(0.1)<cr>
+
+function! HLNext (blinktime)
+    let target_pat = '\c\%#'.@/
+    let blinks = 4
+    let ring = matchadd('ErrorMsg', target_pat, 101)
+    redraw
+    exec 'sleep ' . float2nr(a:blinktime * 1000) . 'm'
+    call matchdelete(ring)
+    redraw
+endfunction
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,8 +1,15 @@
 
-urxvt.scrollBar: false
-urxvt.cursorBlink: true
-urxvt.font: xft:monospace:size=14
-urxvt.cursorColor: Magenta
+urxvt.scrollBar:            false
+urxvt.cursorBlink:          true
+urxvt.font:                 xft:monospace:size=14
+urxvt.cursorColor:          Magenta
+
+! fix underscore not showing
+urxvt.lineSpace:            1
+
+! remap copy & paste
+urxvt.keysm.Shift-Control-V: eval:paste_clipboard
+urxvt.keysm.Shift-Control-P: eval:selection_to_clipboard
 
 ! Dracula Xresources palette
 *.foreground: #F8F8F2
