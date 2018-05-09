@@ -5,8 +5,7 @@ urxvt.scrollBar:            false
 urxvt.cursorBlink:          true
 urxvt.cursorColor:          Magenta
 
-URxvt.font: xft:Droid Sans Mono Nerd Font:style=Regular:size=11
-
+urxvt.font: xft:Droid Sans Mono Nerd Font:style=Regular:size=12
 
 ! fix underscore not showing
 urxvt.lineSpace:            1
