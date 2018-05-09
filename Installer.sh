@@ -29,7 +29,7 @@ mv /home/vt/Ubuntu_Macbook_Air-master /home/vt/Ubuntu_Macbook_Air
 ###########################
 
     sudo apt-get install -y gdebi
-    sudo apt-get update && sudo apt-get install -y curl # TODO Error: must run as root 
+    sudo apt-get install -y curl # TODO Error: must run as root 
 
 # TODO purge
 
@@ -583,13 +583,20 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
 
 # Install:
     sudo apt-get install rxvt-unicode
+    sudo apt-get install rxvt-unicode-256color
 
 # Configuration:
     ln -s -n /home/vt/Ubuntu_Macbook_Air/dotfiles/urxvt/.Xresources /home/vt/
 
 
 
+##########################
+##        Font          ##
+##########################
 
+# NERD Font
+mkdir -p ~/.local/share/fonts
+cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
 
 
 #TODO default terminal

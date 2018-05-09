@@ -1,8 +1,12 @@
 
+! xrdb ~/.Xresources
+
 urxvt.scrollBar:            false
 urxvt.cursorBlink:          true
-urxvt.font:                 xft:monospace:size=14
 urxvt.cursorColor:          Magenta
+
+URxvt.font: xft:Droid Sans Mono Nerd Font:style=Regular:size=11
+
 
 ! fix underscore not showing
 urxvt.lineSpace:            1

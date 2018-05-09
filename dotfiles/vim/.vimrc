@@ -1,5 +1,5 @@
 " Author: VeggieTorta
-" Last edited: 05.02.2018
+" Last edited: 05.08.2018
 
 
 "###########################
@@ -30,7 +30,6 @@
     Plugin 'mklabs/split-term.vim'          " Split-term
 
 
-    
     call vundle#end()                       " required
     filetype plugin indent on               " required
 
@@ -74,8 +73,6 @@
     nnoremap j gj
     nnoremap k gk
 
-
-
     "Always show line numbers, but only in current window.
     set number
     :au WinEnter * :setlocal number
@@ -96,63 +93,29 @@ augroup TODOHighlight
 augroup END
 
 
-" Hightlight search
-"function! HLNext (blinktime)
-"    let [bufnum, lnum, col, off] = getpos('.')
-"   let matchlen = strlen(matchstr(strpart(getline('.'),col-1,@/))
-"   let target_pat = '\c\%#'.@/
-"    let blinks = 3
-"    for n in range(1,blinks)
-"        let red = matchadd('WhiteOnRed', target_pat, 101)
-"        redraw
-"        exec 'sleep'. float2nr(a:blinktime / (2*blinks) * 1000) . 'm'
-"        call matchdelete(red)
-"        redraw
-"        exec 'sleep' . float2nr(a:blinktime / (2*blinks) * 1000) . 'm'
-"    endfor
-"endfunction
-
-
-
-
-
-
-
-
-
-" Damian Conway's Die Blinkënmatchen: highlight matches
+"Damian Conway's Die Blinkënmatchen: highlight matches
+nnoremap <esc> :noh<return><esc>
+nnoremap <esc>^[ <esc>^[
 nnoremap <silent> n n:call HLNext(0.1)<cr>
 nnoremap <silent> N N:call HLNext(0.1)<cr>
 
 function! HLNext (blinktime)
     let target_pat = '\c\%#'.@/
-    let blinks = 4
+    let blinks = 20
     let ring = matchadd('ErrorMsg', target_pat, 101)
     redraw
-    exec 'sleep ' . float2nr(a:blinktime * 1000) . 'm'
+    exec 'sleep ' . float2nr(a:blinktime * 10000) . 'm'
     call matchdelete(ring)
     redraw
 endfunction
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+"Clear previous highlighting (if any)...
+function! HLNextOff ()
+    if (exists('w:HLNext_matchnum') && w:HLNext_matchnum > 0)
+        call matchdelete(w:HLNext_matchnum)
+        unlet! w:HLNext_matchnum
+    endif
+endfunction
 
 
 "##############################
@@ -169,6 +132,7 @@ endfunction
     let g:startify_bookmarks = [
     \ '/home/vt/.vimrc',
     \ '/home/vt/Github/vimwiki/dev/index.md',
+    \ '/home/vt/Github/vimwiki/me/index.md',
     \ '/home/vt/Github/vimwiki/school/index.md',
     \ ]
 
@@ -217,10 +181,6 @@ endfunction
    " Comment current line while in Visual mode.
    " <leader>cc
 
-    
-    
-    
-    
 "#############################
 "Python Settings:
 "#############################
