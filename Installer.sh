@@ -114,6 +114,7 @@ mv /home/vt/Ubuntu_Macbook_Air-master /home/vt/Ubuntu_Macbook_Air
 ##    tmux & dependencies  ##
 #############################
 
+# Install:
     sudo apt install -y automake
     sudo apt install -y build-essential
     sudo apt install -y pkg-config
@@ -132,6 +133,8 @@ mv /home/vt/Ubuntu_Macbook_Air-master /home/vt/Ubuntu_Macbook_Air
 
     sudo make install -y
 
+# Configuration:
+   ln -s -n /home/vt/Ubuntu_Macbook_Air/dotfile/tmux/.tmux.conf /home/vt/
 
 
 ############################
@@ -303,6 +306,7 @@ mv /home/vt/Ubuntu_Macbook_Air-master /home/vt/Ubuntu_Macbook_Air
 # Theme Dracula
     sudo ln -s -n /home/vt/Github/Ubuntu_Laptop/dotfiles/cmus/dracula.theme /usr/share/cmus/
 
+
 # Information:
     # Apply theme, inside of cmus.
         # :colorscheme dracula
@@ -318,7 +322,9 @@ mv /home/vt/Ubuntu_Macbook_Air-master /home/vt/Ubuntu_Macbook_Air
 # Install:
     sudo apt-get install -y cava
 
-# TODO Bind to start with cmus
+# Bind to start with cmus:
+    # tmux script created: zmedia.sh
+
 
 ############################
 ##       paper theme      ##
@@ -532,10 +538,6 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
     # Calendar $ task calendar
 
 
-
-
-
-
 #########################
 ##       neo-vim       ##
 #########################
@@ -589,14 +591,28 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
     ln -s -n /home/vt/Ubuntu_Macbook_Air/dotfiles/urxvt/.Xresources /home/vt/
 
 
-
 ##########################
 ##        Font          ##
 ##########################
 
-# NERD Font
-mkdir -p ~/.local/share/fonts
-cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
+# NERD Font Install:
+    mkdir -p ~/.local/share/fonts
+    cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
+
+
+#########################
+##       Dropbox       ##
+#########################
+
+# Install:
+    sudo apt-get -y install nautilus-dropbox
+
+# Configuration:
+
+
+
+
+
 
 
 #TODO default terminal
