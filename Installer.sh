@@ -610,7 +610,10 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
 # Configuration:
 
 
-
+#########################
+##       
+#Install:
+sudo apt-get install -y password-gorilla
 
 
 
