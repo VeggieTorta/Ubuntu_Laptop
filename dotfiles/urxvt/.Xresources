@@ -11,8 +11,9 @@ urxvt.font: xft:Droid Sans Mono Nerd Font:style=Regular:size=12
 urxvt.lineSpace:            1
 
 ! remap copy & paste
-urxvt.keysm.Shift-Control-V: eval:paste_clipboard
-urxvt.keysm.Shift-Control-P: eval:selection_to_clipboard
+URxvt.keysm.Shift-Control-V: perl:clipboard:paste
+Urxvt.iso14755: False
+Urxvt.pearl-ext-common: default,clipboard
 
 ! Dracula Xresources palette
 *.foreground: #F8F8F2

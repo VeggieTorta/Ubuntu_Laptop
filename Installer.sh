@@ -508,7 +508,7 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
     rm /home/vt/.xbindkeysrc
 
 # Configuration file:
-    ln s- -n /home/vt/Ubuntu_Macbook_Air/dotfies/xbindkeys/.xbindkeysrc /home/vt/
+    ln s- -n /home/vt/Ubuntu_Macbook_Air/dotfiles/xbindkeys/.xbindkeysrc /home/vt/
 
 
 #########################
@@ -527,8 +527,10 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
     sudo apt-get install taskwarrior
 
 # Configuration file:
-    #TODO create 
-    #TODO sync
+    ln -s -n /home/vt/Ubuntu_Macbook_Air/dotfiles/taskwarrior/.taskrc /home/vt
+
+# Sync Via Dropbox:
+    # /home/vt/Drobox/Taskwarrior/.task
 
 # Information:
     # Add $ task add buy mikl
@@ -610,10 +612,39 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
 # Configuration:
 
 
+
 #########################
-##       
+##   Suckless Terminal ##
+#########################
+
+# Dependencies:
+    sudo apt-get install -y libx11-dev
+    sudo apt-get install -y libxft-dev
+    sudo apt-get install -y libxext-dev
+
+
+#Install: #TODO
+    #download current version
+    #Extract zip
+    #cd into folder
+    # sudo make clean install
+
+# Configuration:
+#TODO
+
+
+
+
+
+################################
+##  Gorilla Password Manager  ##
+################################
+
 #Install:
 sudo apt-get install -y password-gorilla
+
+#sycn TODO
+#Congifure TODO
 
 
 

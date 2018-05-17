@@ -1,5 +1,5 @@
 " Author: VeggieTorta
-" Last edited: 05.08.2018
+" Last edited: 05.16.2018
 
 
 "###########################
@@ -28,7 +28,7 @@
     Plugin 'scrooloose/nerdcommenter'       " Nerdcommenter
     Plugin 'kassio/neoterm'                 " Neoterm
     Plugin 'mklabs/split-term.vim'          " Split-term
-
+    Plugin 'kien/ctrlp.vim'                 " Ctrl-P
 
     call vundle#end()                       " required
     filetype plugin indent on               " required
@@ -38,7 +38,7 @@
 "Plugless Settings:
 "##############################
 
-    set shell=zsh                   " Change shell
+    set shell=zsh                   " Set ZSH as shell
     set number relativenumber       " Adds numbers to lines & make ralative
     set path+=**                    " Search into subfolders
     set wildmenu                    " Dislay all matching files when tab complete
@@ -118,6 +118,10 @@ function! HLNextOff ()
 endfunction
 
 
+
+
+
+
 "##############################
 "Plug-In Settings:
 "##############################
@@ -127,13 +131,22 @@ endfunction
     syntax on
 
 
+"Ctrl-P:
+    ":help-ctrlp-options
+    let g:ctrl_map = '<c-p>'
+    let g:ctrl_cmd = 'CtrlP'
+
+
+
+
 "Startify:
 
     let g:startify_bookmarks = [
-    \ '/home/vt/.vimrc',
-    \ '/home/vt/Github/vimwiki/dev/index.md',
-    \ '/home/vt/Github/vimwiki/me/index.md',
-    \ '/home/vt/Github/vimwiki/school/index.md',
+    \ '~/.vimrc',
+    \ '~/Dropbox/Vimwiki/Dev/index.md',
+    \ '~/Dropbox/Vimwiki/Me/index.md',
+    \ '~/Dropbox/Vimwiki/School/index.md',
+    \ '~/Dropbox/Vimwiki/Home/index.md',
     \ ]
 
     let g:startify_custom_header = ['       F-O-C-U-S       ']
@@ -141,7 +154,7 @@ endfunction
 "Vimwiki:
     "<:h vimwiki>
     "Path and file format
-    let g:vimwiki_list = [{'path': '~/Github/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
+    let g:vimwiki_list = [{'path': '~/Dropbox/Vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
 
 
 "Vim-multicursor:
