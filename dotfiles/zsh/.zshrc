@@ -92,3 +92,12 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# todo.txt
+alias t='/home/vt/Dropbox/todo.txt/todo.sh'
+
+if [ -f ~/Dropbox/todo.txt/todo_completion ]; then
+    . ~/Dropbox/todo.txt/todo_completion
+fi
+
+
