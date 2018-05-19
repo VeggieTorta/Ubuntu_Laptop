@@ -1,5 +1,5 @@
 " Author: VeggieTorta
-" Last edited: 05.16.2018
+" Last edited: 05.19.2018
 
 
 "###########################
@@ -63,7 +63,7 @@
     set showmode                    " Always show what mode we're currently editing in.
     set clipboard=unnamed           " Normal OS Clipboard interaction
 
-    let mapleader= ","
+    let mapleader= ","              " Reassign leader
 
     "Swapped ; and : to increase speed, no need to use shift.
     nnoremap ; :
@@ -119,9 +119,6 @@ endfunction
 
 
 
-
-
-
 "##############################
 "Plug-In Settings:
 "##############################
@@ -145,7 +142,7 @@ endfunction
     \ '~/.vimrc',
     \ '~/Dropbox/Vimwiki/Dev/index.md',
     \ '~/Dropbox/Vimwiki/Me/index.md',
-    \ '~/Dropbox/Vimwiki/School/index.md',
+    \ '~/Dropbox/Vimwiki/School/Anatomy1/index.md',
     \ '~/Dropbox/Vimwiki/Home/index.md',
     \ ]
 
