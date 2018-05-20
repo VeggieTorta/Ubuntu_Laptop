@@ -83,6 +83,26 @@
     :au WinEnter * :wincmd =
 
 
+
+
+" Setup xdg-open as the tool to open urls whenever we can, if nothing is set up.This makes using 'gx' a little more sane environments outside of Gnome and KDE."
+
+function! SetupBrowseX()
+    if !exists("g:netrw_browsex_viewer") && executable("xdg-open")
+        let g:netrw_browsex_viewer = "xdg-open"
+    endif
+endfunction
+
+augroup local_netrw
+    autocmd!
+    autocmd VimEnter * call SetupBrowseX()
+augroup END
+
+
+
+
+
+
 augroup TODOHighlight
     autocmd!
     autocmd BufEnter  *.todo,todo,ToDo,TODO  let b:syntax_was_on = exists("syntax_on")

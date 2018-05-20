@@ -136,6 +136,9 @@ mv /home/vt/Ubuntu_Macbook_Air-master /home/vt/Ubuntu_Macbook_Air
 # Configuration:
    ln -s -n /home/vt/Ubuntu_Macbook_Air/dotfile/tmux/.tmux.conf /home/vt/
 
+# Tmux Themepack:
+     git clone https://github.com/jimeh/tmux-themepack.git ~/.tmux-themepack
+
 
 ############################
 ##        gitkraken       ##

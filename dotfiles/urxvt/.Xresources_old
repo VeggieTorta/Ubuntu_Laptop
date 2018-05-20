@@ -1,13 +1,15 @@
-! Window Size
+! xrdb ~/.Xresources
+
+! Window Size:
 URxvt*geometry: 240x84
 
-! Font & Size
-URxvt.font: xft:monospace:size=12 
+! Font & Size:
+URxvt.font: xft:Droid Sans Mono Nerd Font:style=Regular:size=14
 
-! Cursor Color
+! Cursor Color:
 URxvt.cursorColor: Magenta
 
-! Remove Scroll Bar
+! Remove Scroll Bar:
 URxvt.scrollBar: false
 
 ! Dracula Xresources palette
@@ -30,17 +32,23 @@ URxvt.scrollBar: false
 *.color15:    #E6E6E6
 
 
-! Background
+! Transparent Background:
 URxvt.intensityStyles:	false
-URxvt.background:       [70]#000000
+URxvt.background:       [40]#000000
 URxvt.depth:		    32
 
 
-!Rebind Copy & Paste
+! Call on Perl Plugins:
+URxvt.perl-ext-common:  resize-font
+
+! Remap resize-font:
+URxvt.keysym.C-minus:   resize-font:smaller
+URxvt.keysym.C-plus:    resize-font:bigger
+
+
+
+
+
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
 URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
-
-! Perl Extensions UNABLE TO GET WORKING
-!URxvt.perl-ext-common: fullscreen
-!URxvt.keysym.Shift-M: perl:fullscreen.switch
 

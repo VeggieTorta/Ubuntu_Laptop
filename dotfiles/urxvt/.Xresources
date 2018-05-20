@@ -5,17 +5,18 @@ urxvt.scrollBar:            false
 urxvt.cursorBlink:          true
 urxvt.cursorColor:          Magenta
 
-urxvt.font: xft:Droid Sans Mono Nerd Font:style=Regular:size=12
+urxvt.font: xft:Droid Sans Mono Nerd Font:style=Regular:size=14
 
-! fix underscore not showing
+
+! fix underscore not showing:
 urxvt.lineSpace:            1
 
-! remap copy & paste
-URxvt.keysm.Shift-Control-V: perl:clipboard:paste
-Urxvt.iso14755: False
-Urxvt.pearl-ext-common: default,clipboard
+! Transparent Background:
+URxvt.background:   [70]#000000
+URxvt.transprent:   true
+Urxvt.shading:      20
 
-! Dracula Xresources palette
+! Dracula Xresources palette:
 *.foreground: #F8F8F2
 *.background: #282A36
 *.color0:     #000000
@@ -34,3 +35,17 @@ Urxvt.pearl-ext-common: default,clipboard
 *.color14:    #9AEDFE
 *.color7:     #BFBFBF
 *.color15:    #E6E6E6
+
+! Call on Perl Plugins:
+URxvt.perl-ext-common: resize-font, clipboard
+
+! Remap resize-font:
+URxvt.keysym.C-minus:   resize-font:smaller
+URxvt.keysys.C-plus:    resize-font:bigger
+
+! Remap copy & paste:
+URxvt.keysm.Shift-Control-V: perl:clipboard:paste
+Urxvt.iso14755: False
+Urxvt.pearl-ext-common: default,clipboard
+
+
