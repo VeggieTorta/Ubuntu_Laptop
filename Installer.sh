@@ -204,8 +204,6 @@ mv /home/vt/Ubuntu_Macbook_Air-master /home/vt/Ubuntu_Macbook_Air
 
     vim +PluginIntall +qall
 
-
-
 ###########################
 ##    Unity bar bottom   ##
 ###########################
@@ -223,10 +221,6 @@ mv /home/vt/Ubuntu_Macbook_Air-master /home/vt/Ubuntu_Macbook_Air
 
 # Apply wallpaper changer:
     gsettings set org.gnome.desktop.background picture-uri file:///home/vt/Pictures/geo_blue.jpg
-
-
-
-
 
 # TODO Change unity bar size:
 
@@ -479,18 +473,6 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
     ln -s -n /home/vt/Ubuntu_Macbook_Air/dotfiles/mutt/.muttrc /home/vt/
 
 
-
-#########################
-##  TODO KeepPass:     ##
-#########################
-
-# Repo
-    # sudo add-apt-repository ppa:jtaylor/keepass
-
-# Install
-    # sudo apt-get update && sudo apt-get install -y keepass2
-
-
 ##########################
 ##       xbindkeys      ##
 ##########################
@@ -520,27 +502,6 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
 
 # Install:
     sudo apt-get install -y easytag
-
-
-#########################
-##      taskwarrior    ##
-#########################
-
-# Install:
-    sudo apt-get install taskwarrior
-
-# Configuration file:
-    ln -s -n /home/vt/Ubuntu_Macbook_Air/dotfiles/taskwarrior/.taskrc /home/vt
-
-# Sync Via Dropbox:
-    # /home/vt/Drobox/Taskwarrior/.task
-
-# Information:
-    # Add $ task add buy mikl
-    # Edit $ task 1 modify buy milk
-    # List $ task list
-    # Done $ task 1 done
-    # Calendar $ task calendar
 
 
 #########################
@@ -574,6 +535,7 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
 # PIA:
     ln -n -s /home/vt/Ubuntu_Macbook_Air/dotfiles/autostart/pia_manager.desktop
 
+#TODO Dropbox:
 
 ##########################
 ##     Cleanup          ##
@@ -585,15 +547,26 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
 
 
 ##########################
-##     rxvt-unicode     ##
+##     Terminal         ##
 ##########################
 
-# Install:
-    sudo apt-get install rxvt-unicode
-    sudo apt-get install rxvt-unicode-256color
+# URxvt-Unicode: 
+#    Install:
+#    sudo apt-get install rxvt-unicode
+#    sudo apt-get install rxvt-unicode-256color
+#
+#    Configuration:
+#    ln -s -n /home/vt/Ubuntu_Macbook_Air/dotfiles/urxvt/.Xresources /home/vt/
 
-# Configuration:
-    ln -s -n /home/vt/Ubuntu_Macbook_Air/dotfiles/urxvt/.Xresources /home/vt/
+# Termite:
+#   Install:
+#
+#   Configuration:
+    mkdir /home/vt/.config/termite
+    ln -s -n /home/vt/Ubuntu_Mackbook_Air/dotfiles/termite/.config /home/vt/.config/termite/
+
+
+
 
 
 ##########################
@@ -614,31 +587,6 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
 
 # Configuration:
 
-
-
-#########################
-##   Suckless Terminal ##
-#########################
-
-# Dependencies:
-    sudo apt-get install -y libx11-dev
-    sudo apt-get install -y libxft-dev
-    sudo apt-get install -y libxext-dev
-
-
-#Install: #TODO
-    #download current version
-    #Extract zip
-    #cd into folder
-    # sudo make clean install
-
-# Configuration:
-#TODO
-
-
-
-
-
 ################################
 ##  Gorilla Password Manager  ##
 ################################
@@ -656,6 +604,7 @@ sudo apt-get install -y password-gorilla
 #    * sudo update-alternatives --config x-terminal-emulator
 
 
+# TODO install unrar
 
 
 

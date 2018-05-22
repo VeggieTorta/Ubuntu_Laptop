@@ -39,7 +39,8 @@ URxvt.depth:		    32
 
 
 ! Call on Perl Plugins:
-URxvt.perl-ext-common:  resize-font
+!URxvt.perl-lib: /home/vt/Urxvt_Perl_Plugins/
+URxvt.perl-ext-common:  resize-font, 
 
 ! Remap resize-font:
 URxvt.keysym.C-minus:   resize-font:smaller
@@ -48,7 +49,4 @@ URxvt.keysym.C-plus:    resize-font:bigger
 
 
 
-
-URxvt.keysym.Shift-Control-V: eval:paste_clipboard
-URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
 

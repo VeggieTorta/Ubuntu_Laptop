@@ -1,5 +1,10 @@
 " Author: VeggieTorta
-" Last edited: 05.19.2018
+" Last edited: 05.21.2018
+
+"           __   _(_)_ __ ___  _ __ ___ 
+"           \ \ / / | '_ ` _ \| '__/ __|
+"            \ V /| | | | | | | | | (__ 
+"           (_)_/ |_|_| |_| |_|_|  \___|
 
 
 "###########################
@@ -157,16 +162,35 @@ endfunction
 
 
 "Startify:
+"
+    " Number of files to list:
+    let g:startify_file_number = 5
 
+
+    " List order:
+    let g:startify_lists = [
+                \ { 'type': 'bookmarks', 'header': [   'Bookmarks:']      },
+                \ { 'type': 'files', 'header': [   'Remember Me:']       },
+                \ ]
+
+
+    " Bookmarks:
     let g:startify_bookmarks = [
     \ '~/.vimrc',
     \ '~/Dropbox/Vimwiki/Dev/index.md',
     \ '~/Dropbox/Vimwiki/Me/index.md',
+    \ '~/Dropbox/Vimwiki/School/index.md',
     \ '~/Dropbox/Vimwiki/School/Anatomy1/index.md',
     \ '~/Dropbox/Vimwiki/Home/index.md',
     \ ]
 
+    " Custome Header:
     let g:startify_custom_header = ['       F-O-C-U-S       ']
+
+
+
+
+
 
 "Vimwiki:
     "<:h vimwiki>
