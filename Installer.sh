@@ -606,6 +606,31 @@ sudo apt-get install -y password-gorilla
 
 # TODO install unrar
 
+#############################
+##       Linux Brew        ##
+#############################
+
+# TODO install linuxbrew
+#   Install:
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+
+
+# Configure bash file:
+test -d ~/.linuxbrew && PATH="$HOME/.linuxbrew/bin:$HOME/.linuxbrew/sbin:$PATH"
+test -d /home/linuxbrew/.linuxbrew && PATH="/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:$PATH"
+test -r ~/.bash_profile && echo "export PATH='$(brew --prefix)/bin:$(brew --prefix)/sbin'":'"$PATH"' >>~/.bash_profile
+echo "export PATH='$(brew --prefix)/bin:$(brew --prefix)/sbin'":'"$PATH"' >>~/.profile
+
+brew install hello
+
+
+#############################
+##         fzf             ##
+#############################
+#   Install:
+    brew install fzf
+
+#   TODO install fzf
 
 
 

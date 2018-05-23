@@ -2,7 +2,10 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/vt/.oh-my-zsh
+    # export ZSH=/home/vt/.oh-my-zsh
+    export TERM-xterm-256color source /home/vt/.zshrc
+
+
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -99,5 +102,15 @@ alias t='/home/vt/Dropbox/todo.txt/todo.sh'
 if [ -f ~/Dropbox/todo.txt/todo_completion ]; then
     . ~/Dropbox/todo.txt/todo_completion
 fi
+
+# Fzf 
+
+#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+if [[ -f "${ZDOTDIR}/fzf_binding.zsh" ]]; then
+fi
+
+
+
+
 
 

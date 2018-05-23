@@ -1,5 +1,5 @@
 " Author: VeggieTorta
-" Last edited: 05.21.2018
+" Last edited: 05.22.2018
 
 "           __   _(_)_ __ ___  _ __ ___ 
 "           \ \ / / | '_ ` _ \| '__/ __|
@@ -22,18 +22,16 @@
 
     Plugin 'VundleVim/Vundle.vim'           " Vundle manages itself
     Plugin 'scrooloose/nerdtree'            " Nerdtree
-    Plugin 'danro/rename.vim'               " Rename
     Plugin 'vimwiki/vimwiki'                " Vimwiki
     Plugin 'mhinz/vim-startify'             " Vim-Startify
-    Plugin 'terryma/vim-multiple-cursors'   " Multiple cursors
-    Plugin 'pseewald/vim-anyfold'           " Vim-anyfold
 
     Plugin 'vim-airline/vim-airline'        " Airline
     Plugin 'vim-airline/vim-airline-themes' " Airline Themes
     Plugin 'scrooloose/nerdcommenter'       " Nerdcommenter
     Plugin 'kassio/neoterm'                 " Neoterm
     Plugin 'mklabs/split-term.vim'          " Split-term
-    Plugin 'kien/ctrlp.vim'                 " Ctrl-P
+    Plugin 'junegunn/fzf.vim'               " fzf
+    Plugin 'ctrlpvim/ctrlp.vim'             " Ctrl-P
 
     call vundle#end()                       " required
     filetype plugin indent on               " required
@@ -88,36 +86,6 @@
     :au WinEnter * :wincmd =
 
 
-
-
-" Setup xdg-open as the tool to open urls whenever we can, if nothing is set up.This makes using 'gx' a little more sane environments outside of Gnome and KDE."
-
-function! SetupBrowseX()
-    if !exists("g:netrw_browsex_viewer") && executable("xdg-open")
-        let g:netrw_browsex_viewer = "xdg-open"
-    endif
-endfunction
-
-augroup local_netrw
-    autocmd!
-    autocmd VimEnter * call SetupBrowseX()
-augroup END
-
-
-
-
-
-
-augroup TODOHighlight
-    autocmd!
-    autocmd BufEnter  *.todo,todo,ToDo,TODO  let b:syntax_was_on = exists("syntax_on")
-    autocmd BufEnter  *.todo,todo,ToDo,TODO  syntax enable
-    autocmd BufLeave  *.todo,todo,ToDo,TODO  if !getbufvar("%","syntax_was_on")
-    autocmd BufLeave  *.todo,todo,ToDo,TODO      syntax off
-    autocmd BufLeave  *.todo,todo,ToDo,TODO  endif
-augroup END
-
-
 "Damian Conway's Die Blinkënmatchen: highlight matches
 nnoremap <esc> :noh<return><esc>
 nnoremap <esc>^[ <esc>^[
@@ -143,7 +111,6 @@ function! HLNextOff ()
 endfunction
 
 
-
 "##############################
 "Plug-In Settings:
 "##############################
@@ -155,14 +122,18 @@ endfunction
 
 "Ctrl-P:
     ":help-ctrlp-options
+
+    " Default mapping:
     let g:ctrl_map = '<c-p>'
     let g:ctrl_cmd = 'CtrlP'
 
-
+    " Search Directory:
+    " DEFAULT: let g:ctrlp_working_path_mode = 'ra'
+    let g:ctrlp_working_path_mode = '~/Dropbox/Vimwiki/'
 
 
 "Startify:
-"
+
     " Number of files to list:
     let g:startify_file_number = 5
 
@@ -172,7 +143,6 @@ endfunction
                 \ { 'type': 'bookmarks', 'header': [   'Bookmarks:']      },
                 \ { 'type': 'files', 'header': [   'Remember Me:']       },
                 \ ]
-
 
     " Bookmarks:
     let g:startify_bookmarks = [
@@ -188,28 +158,10 @@ endfunction
     let g:startify_custom_header = ['       F-O-C-U-S       ']
 
 
-
-
-
-
 "Vimwiki:
     "<:h vimwiki>
     "Path and file format
     let g:vimwiki_list = [{'path': '~/Dropbox/Vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
-
-
-"Vim-multicursor:
-    let g:multi_cursor_use_default_mapping=0
-
-    "Default mapping
-    let g:multi_cursor_start_word_key      = '<C-n>'
-    let g:multi_cursor_select_all_word_key = '<A-n>'
-    let g:multi_cursor_start_key           = 'g<C-n>'
-    let g:multi_cursor_select_all_key      = 'g<A-n>'
-    let g:multi_cursor_next_key            = '<C-n>'
-    let g:multi_cursor_prev_key            = '<C-p>'
-    let g:multi_cursor_skip_key            = '<C-x>'
-    let g:multi_cursor_quit_key            = '<Esc>'
 
 
 "NerdTree:
@@ -232,8 +184,14 @@ endfunction
 
 
 "Nerdcommenter
-   " Comment current line while in Visual mode.
-   " <leader>cc
+   "Comment current line while in Visual mode.
+    "<leader>cc
+
+    "Add space after comment:
+    let g:NERDspaceDelims = 1
+
+
+
 
 "#############################
 "Python Settings:
