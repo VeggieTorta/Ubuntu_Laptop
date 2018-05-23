@@ -7,12 +7,12 @@ urxvt.cursorColor:          Magenta
 
 urxvt.font: xft:Droid Sans Mono Nerd Font:style=Regular:size=14
 
-
 ! fix underscore not showing:
 urxvt.lineSpace:            1
 
 ! Transparent Background:
-URxvt.background:   [70]#000000
+URxvt.depth:        32
+URxvt.background:   [40]#000000
 URxvt.transprent:   true
 Urxvt.shading:      20
 

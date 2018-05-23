@@ -552,20 +552,28 @@ mv /home/vt/Ubuntu_Macbook_Air-master /home/vt/Ubuntu_Macbook_Air
 ##     Terminal         ##
 ##########################
 
-# URxvt-Unicode: 
-#    Install:
-#    sudo apt-get install rxvt-unicode
-#    sudo apt-get install rxvt-unicode-256color
-#
-#    Configuration:
-#    ln -s -n /home/vt/Ubuntu_Macbook_Air/dotfiles/urxvt/.Xresources /home/vt/
+# URxvt-Unicode:
+
+#   Install:
+    sudo apt-get install -y rxvt-unicode-256color
+
+# Configuration:
+    ln -s -n /home/vt/Ubuntu_Macbook_Air/dotfiles/urxvt/.Xresources /home/vt/
+
+# Transparentcy Dependentcy:
+    sudo apt-get install -y compton
+
+
+# Configuration load:
+    xrdb ~/.Xresources
+
 
 # Termite:
 #   Install:
 #
 #   Configuration:
-    mkdir /home/vt/.config/termite
-    ln -s -n /home/vt/Ubuntu_Mackbook_Air/dotfiles/termite/.config /home/vt/.config/termite/
+#    mkdir /home/vt/.config/termite
+#    ln -s -n /home/vt/Ubuntu_Mackbook_Air/dotfiles/termite/.config /home/vt/.config/termite/
 
 
 
