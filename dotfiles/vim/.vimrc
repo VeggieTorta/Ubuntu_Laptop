@@ -41,7 +41,7 @@
 "Plugless Settings:
 "##############################
 
-    set shell=zsh                   " Set ZSH as shell
+    set shell=bash                  " Set basch as shell, it used to be ZSh
     set number relativenumber       " Adds numbers to lines & make ralative
     set path+=**                    " Search into subfolders
     set wildmenu                    " Dislay all matching files when tab complete
@@ -147,11 +147,11 @@ endfunction
     " Bookmarks:
     let g:startify_bookmarks = [
     \ '~/.vimrc',
-    \ '~/Dropbox/Vimwiki/Dev/index.md',
-    \ '~/Dropbox/Vimwiki/Me/index.md',
-    \ '~/Dropbox/Vimwiki/School/index.md',
-    \ '~/Dropbox/Vimwiki/School/Anatomy1/index.md',
-    \ '~/Dropbox/Vimwiki/Home/index.md',
+    \ '~/Dropbox/vimwiki/dev/index.md',
+    \ '~/Dropbox/vimwiki/me/index.md',
+    \ '~/Dropbox/vimwiki/school/index.md',
+    \ '~/Dropbox/vimwiki/school/Anatomy1/index.md',
+    \ '~/Dropbox/vimwiki/home/index.md',
     \ ]
 
     " Custome Header:
@@ -161,7 +161,7 @@ endfunction
 "Vimwiki:
     "<:h vimwiki>
     "Path and file format
-    let g:vimwiki_list = [{'path': '~/Dropbox/Vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
+    let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
 
 
 "NerdTree:

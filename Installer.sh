@@ -7,6 +7,17 @@
 #TODO cmus failed /usr/share/cmus/cmus/rc: No such file or directory
 #TODO tmux failed
 #TODO auto start symbolink link failed
+#TODO NEOVIM req feedback
+#TODO clean-up took out all the dotfiles
+#TODO script to auto close and reopen terminal 
+#TODO dotfiles folder should be created
+#TODO script to auto launch ulanucher
+#TODO terminal-termite not installed
+#TODO wallpapers lose, not in wallpaper folder :(
+#TODO tmux not installed
+#TODO rebinding of keys needed
+#TODO theme not applied
+#
 
 
 
