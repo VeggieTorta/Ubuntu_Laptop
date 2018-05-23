@@ -266,7 +266,7 @@ mv /home/vt/Ubuntu_Macbook_Air-master /home/vt/Ubuntu_Macbook_Air
 
 
 # Install:
-    sudo apt-get install -y zsh
+#   sudo apt-get install -y zsh
 
 
 # TODO remove current .bashrc 
@@ -501,8 +501,8 @@ mv /home/vt/Ubuntu_Macbook_Air-master /home/vt/Ubuntu_Macbook_Air
 #########################
 
 
-#sudo apt-get update
-#sudo apt-get install neovim
+# Install:
+    sudo apt-get install neovim
 
 
 # Link old vim to neovim
@@ -581,11 +581,11 @@ mv /home/vt/Ubuntu_Macbook_Air-master /home/vt/Ubuntu_Macbook_Air
 ##  Gorilla Password Manager  ##
 ################################
 
-#Install:
+# Install:
     sudo apt-get install -y password-gorilla
 
-#sycn TODO
-#Congifure TODO
+# Sycn:
+#   Done via Dropbox
 
 
 
