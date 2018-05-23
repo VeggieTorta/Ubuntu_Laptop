@@ -2,9 +2,6 @@
 
 
 #TODO if/then statement to check if program is installed
-
-#Mini.ios
-#TODO unknown function: vundle#end, look in .vimrc file
 #TODO tilix failed 
 #TODO amazon bloatwear still installed
 #TODO cmus failed /usr/share/cmus/cmus/rc: No such file or directory
@@ -37,8 +34,6 @@ mv /home/vt/Ubuntu_Macbook_Air-master /home/vt/Ubuntu_Macbook_Air
     # Install Caffeine
 
 
-
-
 ############################
 ##       Repos            ##
 ############################
@@ -62,8 +57,8 @@ mv /home/vt/Ubuntu_Macbook_Air-master /home/vt/Ubuntu_Macbook_Air
     yes '' | sudo add-apt-repository ppa:dobey/redshift-daily
 # easytag
     yes '' | sudo add-apt-repository ppa:amigadave/ppa
-
-
+# neovim:
+    yes '' | sudo add-apt-repository ppa:neovim-ppa/unstable
 
 
 # update all repos
@@ -134,10 +129,10 @@ mv /home/vt/Ubuntu_Macbook_Air-master /home/vt/Ubuntu_Macbook_Air
     sudo make install -y
 
 # Configuration:
-   ln -s -n /home/vt/Ubuntu_Macbook_Air/dotfile/tmux/.tmux.conf /home/vt/
+    ln -s -n /home/vt/Ubuntu_Macbook_Air/dotfile/tmux/.tmux.conf /home/vt/
 
 # Tmux Themepack:
-     git clone https://github.com/jimeh/tmux-themepack.git ~/.tmux-themepack
+    git clone https://github.com/jimeh/tmux-themepack.git ~/.tmux-themepack
 
 
 ############################
@@ -285,7 +280,7 @@ mv /home/vt/Ubuntu_Macbook_Air-master /home/vt/Ubuntu_Macbook_Air
 # TODO disable the changing of shell
 
 # Configuration file symbolic link:
-    ln -s -n /home/vt/Ubuntu_Macbook_Air/dotfiles/zsh/.zshrc /home/vt/
+    #ln -s -n /home/vt/Ubuntu_Macbook_Air/dotfiles/zsh/.zshrc /home/vt/
     #TODO correct the right file
 
 
@@ -347,7 +342,7 @@ mv /home/vt/Ubuntu_Macbook_Air-master /home/vt/Ubuntu_Macbook_Air
 
 # Uninstall:
 
-sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-flickr account-plugin-jabber account-plugin-salut account-plugin-twitter account-plugin-windows-live account-plugin-yahoo aisleriot brltty colord deja-dup deja-dup-backend-gvfs duplicity empathy empathy-common evolution-data-server-online-accounts example-content firefox gnome-accessibility-themes gnome-contacts gnome-mahjongg gnome-mines gnome-orca gnome-screensaver gnome-sudoku gnome-video-effects gnomine landscape-common libreoffice-avmedia-backend-gstreamer libreoffice-base-core libreoffice-calc libreoffice-common libreoffice-core libreoffice-draw libreoffice-gnome libreoffice-gtk libreoffice-impress libreoffice-math libreoffice-ogltrans libreoffice-pdfimport libreoffice-presentation-minimizer libreoffice-style-galaxy libreoffice-style-human libreoffice-writer libsane libsane-common mcp-account-manager-uoa python3-uno rhythmbox rhythmbox-plugins rhythmbox-plugin-zeitgeist sane-utils shotwell shotwell-common telepathy-gabble telepathy-haze telepathy-idle telepathy-indicator telepathy-logger telepathy-mission-control-5 telepathy-salut thunderbird thunderbird-gnome-support totem totem-common totem-plugins unity-scope-audacious unity-scope-chromiumbookmarks unity-scope-clementine unity-scope-colourlovers unity-scope-devhelp unity-scope-firefoxbookmarks unity-scope-gdrive unity-scope-gmusicbrowser unity-scope-gourmet unity-scope-manpages unity-scope-musicstores unity-scope-musique unity-scope-openclipart unity-scope-texdoc unity-scope-tomboy unity-scope-video-remote unity-scope-virtualbox unity-scope-yelp unity-scope-zotero -y
+#sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-flickr account-plugin-jabber account-plugin-salut account-plugin-twitter account-plugin-windows-live account-plugin-yahoo aisleriot brltty colord deja-dup deja-dup-backend-gvfs duplicity empathy empathy-common evolution-data-server-online-accounts example-content firefox gnome-accessibility-themes gnome-contacts gnome-mahjongg gnome-mines gnome-orca gnome-screensaver gnome-sudoku gnome-video-effects gnomine landscape-common libreoffice-avmedia-backend-gstreamer libreoffice-base-core libreoffice-calc libreoffice-common libreoffice-core libreoffice-draw libreoffice-gnome libreoffice-gtk libreoffice-impress libreoffice-math libreoffice-ogltrans libreoffice-pdfimport libreoffice-presentation-minimizer libreoffice-style-galaxy libreoffice-style-human libreoffice-writer libsane libsane-common mcp-account-manager-uoa python3-uno rhythmbox rhythmbox-plugins rhythmbox-plugin-zeitgeist sane-utils shotwell shotwell-common telepathy-gabble telepathy-haze telepathy-idle telepathy-indicator telepathy-logger telepathy-mission-control-5 telepathy-salut thunderbird thunderbird-gnome-support totem totem-common totem-plugins unity-scope-audacious unity-scope-chromiumbookmarks unity-scope-clementine unity-scope-colourlovers unity-scope-devhelp unity-scope-firefoxbookmarks unity-scope-gdrive unity-scope-gmusicbrowser unity-scope-gourmet unity-scope-manpages unity-scope-musicstores unity-scope-musique unity-scope-openclipart unity-scope-texdoc unity-scope-tomboy unity-scope-video-remote unity-scope-virtualbox unity-scope-yelp unity-scope-zotero -y
 
 
 ##########################
@@ -411,9 +406,6 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
 
 # Install:
     sudo apt-get install -y ulauncher
-
-
-# TODO configuration file
 
 # Remove current configuration files:
     rm /home/vt/.config/ulauncher/settings.json
@@ -508,15 +500,13 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
 ##       neo-vim       ##
 #########################
 
-#sudo add-apt-repository ppa:neovim-ppa/unstable
+
 #sudo apt-get update
 #sudo apt-get install neovim
 
 
 # Link old vim to neovim
     ln -s ~/.vimrc ~/.config/nvim/init.vim
-
-
 
 
 ##########################
@@ -535,7 +525,8 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
 # PIA:
     ln -n -s /home/vt/Ubuntu_Macbook_Air/dotfiles/autostart/pia_manager.desktop
 
-#TODO Dropbox:
+# Dropbox:
+    #TODO
 
 ##########################
 ##     Cleanup          ##
@@ -585,14 +576,13 @@ sudo apt-get remove account-plugin-aim account-plugin-facebook account-plugin-fl
 # Install:
     sudo apt-get -y install nautilus-dropbox
 
-# Configuration:
 
 ################################
 ##  Gorilla Password Manager  ##
 ################################
 
 #Install:
-sudo apt-get install -y password-gorilla
+    sudo apt-get install -y password-gorilla
 
 #sycn TODO
 #Congifure TODO
@@ -604,7 +594,9 @@ sudo apt-get install -y password-gorilla
 #    * sudo update-alternatives --config x-terminal-emulator
 
 
-# TODO install unrar
+
+
+
 
 #############################
 ##       Linux Brew        ##
@@ -616,21 +608,21 @@ sudo apt-get install -y password-gorilla
 
 
 # Configure bash file:
-test -d ~/.linuxbrew && PATH="$HOME/.linuxbrew/bin:$HOME/.linuxbrew/sbin:$PATH"
-test -d /home/linuxbrew/.linuxbrew && PATH="/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:$PATH"
-test -r ~/.bash_profile && echo "export PATH='$(brew --prefix)/bin:$(brew --prefix)/sbin'":'"$PATH"' >>~/.bash_profile
-echo "export PATH='$(brew --prefix)/bin:$(brew --prefix)/sbin'":'"$PATH"' >>~/.profile
-
-brew install hello
+    test -d ~/.linuxbrew && PATH="$HOME/.linuxbrew/bin:$HOME/.linuxbrew/sbin:$PATH"
+    test -d /home/linuxbrew/.linuxbrew && PATH="/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:$PATH"
+    test -r ~/.bash_profile && echo "export PATH='$(brew --prefix)/bin:$(brew --prefix)/sbin'":'"$PATH"' >>~/.bash_profile
+    echo "export PATH='$(brew --prefix)/bin:$(brew --prefix)/sbin'":'"$PATH"' >>~/.profile
+    brew install hello
 
 
 #############################
 ##         fzf             ##
 #############################
-#   Install:
-    brew install fzf
 
 #   TODO install fzf
 
+#############################
+##         unrar           ##
+#############################
 
-
+# TODO install unrar
