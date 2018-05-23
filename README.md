@@ -57,9 +57,9 @@
 
 
 # TODO:
-Clear out TODOs found in Initial_Installer.sh
-List out removed programs
-Modify start-up applications
-Create script that gives option to modify home folder.
-Add github images before and after of this project
-Clean-up script 
+* Clear out TODOs found in Initial_Installer.sh
+* List out removed programs
+* Modify start-up applications
+* Create script that gives option to modify home folder.
+* Add github images before and after of this project
+* Clean-up script 
