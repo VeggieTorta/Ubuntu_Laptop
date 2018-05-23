@@ -23,7 +23,8 @@
 * Theme: Paper
 
 # Programs:
-* Tilix
+* Dropbox
+* Password Gorilla
 * Tmux
 * Vim:
 	* NERDTree
@@ -41,8 +42,6 @@
 * Cava
 * Cmus
 * Virtualbox
-* ZSH
-* Oh-My-Zsh
 * Chrome
 	* Vimc (manually installed)
 	* AdRemover (manual installed)
@@ -51,13 +50,16 @@
 * ffmpeg
 * Arp-scan
 
-# Uninstall
-* Most of Ubuntu's stock programs *update to come*
+# Uninstalled:
+* Zzz-ZSH
+* Zzz-Tilix
+* Zzz-Oh-My-Zsh
+
 
 # TODO:
-[] Clear out TODOs found in Initial_Installer.sh
-[] List out removed programs
-[] Modify start-up applications
-[] Create script that gives option to modify home folder.
-[] Add github images before and after of this project
-[] Clean-up script (zip
+Clear out TODOs found in Initial_Installer.sh
+List out removed programs
+Modify start-up applications
+Create script that gives option to modify home folder.
+Add github images before and after of this project
+Clean-up script 
