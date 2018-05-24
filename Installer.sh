@@ -275,24 +275,14 @@ mv /home/vt/Ubuntu_Macbook_Air-master /home/vt/Ubuntu_Macbook_Air
 ##   zsh & Oh-My-Zsh     ##
 ###########################
 
-
 # Install:
-#   sudo apt-get install -y zsh
+    #sudo apt-get install -y zsh
 
-
-# TODO remove current .bashrc 
-    # rm /home/vt/.bashrc
-    # TODO .bashrc edited to make zsh default
-    # mv zip/file/ /home/vt/
-
-
-# install oh-my-zsh TODO stops the continuation of all other install, remove or place at the end.
+# Install oh-my-zsh.
    #sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-# TODO disable the changing of shell
 
 # Configuration file symbolic link:
     #ln -s -n /home/vt/Ubuntu_Macbook_Air/dotfiles/zsh/.zshrc /home/vt/
-    #TODO correct the right file
 
 
 ############################
@@ -360,16 +350,20 @@ mv /home/vt/Ubuntu_Macbook_Air-master /home/vt/Ubuntu_Macbook_Air
 ##  Power Saving Tool   ##
 ##########################
 
+
 # Install Powertop:
     sudo apt-get install -y powertop
+
 
 # Install TLP:
     sudo apt install -y tlp tlp-rdw
     sudo tlp start
 
+
 ##########################
 ##       mosh           ##
 ##########################
+
 
 # Install:
     sudo apt install -y mosh
@@ -382,6 +376,7 @@ mv /home/vt/Ubuntu_Macbook_Air-master /home/vt/Ubuntu_Macbook_Air
 
 # Security key:
     wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
+
 
 # Intall:
     sudo apt-get install -y virtualbox
@@ -441,8 +436,10 @@ mv /home/vt/Ubuntu_Macbook_Air-master /home/vt/Ubuntu_Macbook_Air
 ##      Arp-scan       ##
 #########################
 
+
 # Install:
     sudo apt-get install -y arp-scan
+
 
 # Information:
     # To scan local network:
@@ -454,6 +451,7 @@ mv /home/vt/Ubuntu_Macbook_Air-master /home/vt/Ubuntu_Macbook_Air
 ##       VLC           ##
 #########################
 
+
 # Install:
     sudo apt-get install -y vlc
 
@@ -462,6 +460,7 @@ mv /home/vt/Ubuntu_Macbook_Air-master /home/vt/Ubuntu_Macbook_Air
 #########################
 ##         mutt        ##
 #########################
+
 
 # Install:
 #    sudo apt-get install -y mutt
@@ -473,7 +472,7 @@ mv /home/vt/Ubuntu_Macbook_Air-master /home/vt/Ubuntu_Macbook_Air
 #    rm /home/vt/.mutt/.muttrc
 
 # Configuration file:
-    ln -s -n /home/vt/Ubuntu_Macbook_Air/dotfiles/mutt/.muttrc /home/vt/
+#    ln -s -n /home/vt/Ubuntu_Macbook_Air/dotfiles/mutt/.muttrc /home/vt/
 
 
 ##########################
@@ -543,6 +542,7 @@ mv /home/vt/Ubuntu_Macbook_Air-master /home/vt/Ubuntu_Macbook_Air
 ##     Cleanup          ##
 ##########################
 
+
 # Remove Github zip file:
     rm  -rf /home/vt/Ubuntu_Macbook_Air
     rm /home/vt/Download/Ubuntu_Macbook_Air-master.zip
@@ -551,6 +551,7 @@ mv /home/vt/Ubuntu_Macbook_Air-master /home/vt/Ubuntu_Macbook_Air
 ##########################
 ##     Terminal         ##
 ##########################
+
 
 # URxvt-Unicode:
 
@@ -566,6 +567,7 @@ mv /home/vt/Ubuntu_Macbook_Air-master /home/vt/Ubuntu_Macbook_Air
 
 # Configuration load:
     xrdb ~/.Xresources
+
 
 
 # Termite:
@@ -614,15 +616,11 @@ mv /home/vt/Ubuntu_Macbook_Air-master /home/vt/Ubuntu_Macbook_Air
 
 
 
-
-
-
 #############################
 ##       Linux Brew        ##
 #############################
 
-# TODO install linuxbrew
-#   Install:
+# Install:
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
 
 
@@ -638,7 +636,7 @@ mv /home/vt/Ubuntu_Macbook_Air-master /home/vt/Ubuntu_Macbook_Air
 ##         fzf             ##
 #############################
 
-#   TODO install fzf
+# TODO install fzf
 
 #############################
 ##         unrar           ##

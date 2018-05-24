@@ -33,6 +33,13 @@
     Plugin 'junegunn/fzf.vim'               " fzf
     Plugin 'ctrlpvim/ctrlp.vim'             " Ctrl-P
 
+    Plugin 'MarcWeber/vim-addon-mw-utils'   " Snipmate
+    Plugin 'tomtom/tlib_vim'                " Snipmate
+    Plugin 'garbas/vim-snipmate'            " Snipmate
+    Plugin 'honza/vim-snippets'             " Snipmate
+
+
+    
     call vundle#end()                       " required
     filetype plugin indent on               " required
 
