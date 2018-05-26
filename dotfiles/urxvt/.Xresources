@@ -1,5 +1,9 @@
+! Macbook-Air Keyboard:
+!   Paste:  Insert (fn + enter) + shift
+!   copy:   Shift + Control + C
 
 ! xrdb ~/.Xresources
+
 
 urxvt.scrollBar:            false
 urxvt.cursorBlink:          true
@@ -37,15 +41,11 @@ Urxvt.shading:      20
 *.color15:    #E6E6E6
 
 ! Call on Perl Plugins:
-URxvt.perl-ext-common: resize-font, clipboard
+URxvt.perl-ext-common: resize-font
 
 ! Remap resize-font:
 URxvt.keysym.C-minus:   resize-font:smaller
 URxvt.keysys.C-plus:    resize-font:bigger
 
-! Remap copy & paste:
-URxvt.keysm.Shift-Control-V: perl:clipboard:paste
-Urxvt.iso14755: False
-Urxvt.pearl-ext-common: default,clipboard
 
 

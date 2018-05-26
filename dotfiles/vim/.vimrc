@@ -1,4 +1,4 @@
-" Author: VeggieTorta
+
 " Last edited: 05.22.2018
 
 "           __   _(_)_ __ ___  _ __ ___ 
@@ -33,13 +33,6 @@
     Plugin 'junegunn/fzf.vim'               " fzf
     Plugin 'ctrlpvim/ctrlp.vim'             " Ctrl-P
 
-    Plugin 'MarcWeber/vim-addon-mw-utils'   " Snipmate
-    Plugin 'tomtom/tlib_vim'                " Snipmate
-    Plugin 'garbas/vim-snipmate'            " Snipmate
-    Plugin 'honza/vim-snippets'             " Snipmate
-
-
-    
     call vundle#end()                       " required
     filetype plugin indent on               " required
 
@@ -93,7 +86,13 @@
     :au WinEnter * :wincmd =
 
 
+"Snippets
+"####################################################
+    " SOAP NOTE Template
+    nnoremap zsoap :-1read $HOME/Github/Ubuntu_Macbook_Air/dotfiles/vim/zsoap.txt<CR>3jwf>a
+
 "Damian Conway's Die Blinkënmatchen: highlight matches
+"#####################################################
 nnoremap <esc> :noh<return><esc>
 nnoremap <esc>^[ <esc>^[
 nnoremap <silent> n n:call HLNext(0.1)<cr>

@@ -203,7 +203,6 @@ mv /home/vt/Ubuntu_Macbook_Air-master /home/vt/Ubuntu_Macbook_Air
     # NERDTree
     # Startify
     # Vimwiki
-    # Rename
     # Vim-notes
     # Vim-misc
     # Vim-multople-cursors
@@ -564,6 +563,11 @@ mv /home/vt/Ubuntu_Macbook_Air-master /home/vt/Ubuntu_Macbook_Air
 # Transparentcy Dependentcy:
     sudo apt-get install -y compton
 
+# Perl Plug-ins: /usr/lib/urxvt/perl
+    ln -s -n /home/vt/dotfile/urxvt/perl_scripts/resize-font /usr/lib/urxvt/perl/
+
+
+
 
 # Configuration load:
     xrdb ~/.Xresources
@@ -630,6 +634,22 @@ mv /home/vt/Ubuntu_Macbook_Air-master /home/vt/Ubuntu_Macbook_Air
     test -r ~/.bash_profile && echo "export PATH='$(brew --prefix)/bin:$(brew --prefix)/sbin'":'"$PATH"' >>~/.bash_profile
     echo "export PATH='$(brew --prefix)/bin:$(brew --prefix)/sbin'":'"$PATH"' >>~/.profile
     brew install hello
+
+
+#############################
+##       todo.txt          ##
+#############################
+
+
+# Install:
+#   Full program already exit on dropbox account /Dropbox/todo.txt/
+
+# Configuration:
+#   .bashrc set-up
+#       alias t='/home/vt/Dropbox/todo.txt/todo.sh
+#       if [ -f ~/Dropbox/todo.txt/todo_completion ]; then
+#           . ~/Dropbox/todo.txt/todo_completion
+#       fi
 
 
 #############################

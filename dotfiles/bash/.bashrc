@@ -110,9 +110,13 @@ fi
 ##    Ranger    ##
 ##################
 alias r='ranger'
+alias ra='ranger'
 
 
-
+##################
+##   cursor     ##
+##################
+prompt_foreground_magenta=35
 
 
 
