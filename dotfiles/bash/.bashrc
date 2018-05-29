@@ -114,6 +114,12 @@ alias ra='ranger'
 
 
 ##################
+##    Python    ##
+##################
+alias python='python3'
+
+
+##################
 ##   cursor     ##
 ##################
 prompt_foreground_magenta=35

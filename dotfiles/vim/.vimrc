@@ -88,12 +88,14 @@
 
 "Snippets
 "####################################################
-    " SOAP NOTE Template
+
+" SOAP NOTE Template
     nnoremap zsoap :-1read $HOME/Github/Ubuntu_Macbook_Air/dotfiles/vim/zsoap.txt<CR>3jwf>a
 
 
 "Damian Conway's Die Blinkënmatchen: highlight matches
 "#####################################################
+
 nnoremap <esc> :noh<return><esc>
 nnoremap <esc>^[ <esc>^[
 nnoremap <silent> n n:call HLNext(0.1)<cr>
@@ -121,6 +123,7 @@ endfunction
 "##############################
 "Plug-In Settings:
 "##############################
+
 
     set nocompatible
     filetype plugin on
@@ -192,7 +195,8 @@ endfunction
 
 "Nerdcommenter
    "Comment current line while in Visual mode.
-    "<leader>cc
+    "<leader>cci        comment
+    "<leader>c<space>   uncomment
 
     "Add space after comment:
     let g:NERDspaceDelims = 1
