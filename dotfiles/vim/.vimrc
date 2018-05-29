@@ -91,6 +91,7 @@
     " SOAP NOTE Template
     nnoremap zsoap :-1read $HOME/Github/Ubuntu_Macbook_Air/dotfiles/vim/zsoap.txt<CR>3jwf>a
 
+
 "Damian Conway's Die Blinkënmatchen: highlight matches
 "#####################################################
 nnoremap <esc> :noh<return><esc>
