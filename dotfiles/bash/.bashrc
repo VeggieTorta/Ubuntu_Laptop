@@ -130,7 +130,7 @@ prompt_foreground_magenta=35
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+#alias alert=notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\' 's/^\s*[0-9]\+\s*//;s/[;&|]\s*'alert$' '/' '\')"
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -168,7 +168,7 @@ export BASH_IT_THEME='powerline'
 # Your place for hosting Git repos. I use this for private repos.
 export GIT_HOSTING='git@git.domain.com'
 
-# Don't check mail when opening terminal.
+# Dont check mail when opening terminal.
 unset MAILCHECK
 
 # Change this to your console based IRC client of choice.
@@ -183,7 +183,7 @@ export SCM_CHECK=true
 # Set Xterm/screen/Tmux title with only a short hostname.
 # Uncomment this (or set SHORT_HOSTNAME to something else),
 # Will otherwise fall back on $HOSTNAME.
-#export SHORT_HOSTNAME=$(hostname -s)
+export SHORT_HOSTNAME=$(hostname -s)
 
 # Set Xterm/screen/Tmux title with only a short username.
 # Uncomment this (or set SHORT_USER to something else),
